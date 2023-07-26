@@ -5,9 +5,11 @@ function createLine(source, target){
   
   return "M" + " " +
     source[0] + " " +
-    source[1] + " " + "L" + " " +
-    target[0] + " " +
-    target[1]
+    source[1] + " " + "Q" + " " +
+    source[0] + " " +
+    dy + ", " +
+    dx +
+    dy
 }
 
 function getPointPos(point){
