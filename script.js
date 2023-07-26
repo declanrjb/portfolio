@@ -4,11 +4,9 @@ function createLine(source, target){
       dr = Math.sqrt(dx * dx + dy * dy)/1.5;
   
   return "M" +
-    source[0] + "," +
-    source[1] + "Q" +
-    source[0] +
-    source[1] + "," +
-    target[0] +
+    source[0] + " " +
+    source[1] + " " + "Q" + " " +
+    target[0] + " " +
     target[1]
 }
 
