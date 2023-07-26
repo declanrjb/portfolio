@@ -34,8 +34,6 @@ function drawPath(leftpoint,rightpoint,path) {
   path.setAttribute('d',draftline)
 }
 
-/*
-
 var path1 = document.querySelector(".p1"),
     path2 = document.querySelector(".p2");
 
@@ -43,8 +41,6 @@ var c1 = document.querySelector("#biden-economy"),
     c2 = document.querySelector("#democrat-economy-endpoint");
 
 drawPath(c1,c2,path1)
-
-*/
 
 /*
 path1.setAttribute('d', createLine([c1Pos.right, c1Pos.middle], [c2Pos.left, c2Pos.middle]));
