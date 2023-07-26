@@ -23,6 +23,7 @@ div {
   height: 500px;
   width: 700px;
 }
+
 div b {
   position: absolute;
   padding: 30px;
@@ -31,16 +32,19 @@ div b {
   height: 0;
   border-radius: 50%;
 }
+
 div .c1 {
   padding: 10px;
-  top: 220px;
+  top: 0px;
   left: 10%;
   background: red;
 }
+
 div .c2 {
   left: 50%;
   background: blue;
 }
+
 div .c3 {
   left: 70%;
   padding: 60px;
