@@ -34,15 +34,17 @@ function drawPath(leftpoint,rightpoint,path) {
   path.setAttribute('d',draftline)
 }
 
-var path1 = document.querySelector("#biden-democrat-economy-line");
+var dem_economy_line = document.querySelector("#dem-economy-line"),
+    dem_healthcare_line = document.querySelector("#dem-healthcare-line"),
+    dem_war_line = document.querySelector("#dem-war-line");
 
 var biden_economy = document.querySelector("#biden-economy"),
-    democrat_economy_endpoint = document.querySelector("#democrat-economy-endpoint");
+    democrat_economy_endpoint = document.querySelector("#democrat-economy-endpoint"),
+    biden_healthcare = document.querySelector("#biden-healthcare"),
+    democrat_healthcare_endpoint = document.querySelector("#democrat-healthcare-endpoint"),
+    biden_war = document.querySelector("#biden-war"),
+    democrat_war_endpoint = document.querySelector("#democrat-war-endpoint");
 
-drawPath(biden_economy,democrat_economy_endpoint,path1)
-
-/*
-path1.setAttribute('d', createLine([c1Pos.right, c1Pos.middle], [c2Pos.left, c2Pos.middle]));
-
-path2.setAttribute('d', createLine([c1Pos.left, c1Pos.top], [c3Pos.left, c3Pos.top]));
-*/
+drawPath(biden_economy,democrat_economy_endpoint,dem_economy_line);
+drawPath(biden_healthcare,democrat_healthcare_endpoint,dem_healthcare_line);
+drawPath(biden_war,democrat_war_endpoint,dem_war_line);
