@@ -21,8 +21,9 @@ function createLine(source, target){
 
 function getPointPos(point){
   var pos = $(point).position();
-  pos.left += point.clientWidth/2;
-  pos.top += point.clientHeight/2;
+  pos.right = pos.left + point.clientWidth;
+  pos.bottom = pos.top + point.clientHeight;
+  pos.middle = pos.top + point.clientHeight/2;
   return pos;
 }
 
@@ -36,7 +37,7 @@ var c1 = document.querySelector(".c1"),
     c3 = document.querySelector(".c3"),
     c3Pos = getPointPos(c3);
 
-path1.setAttribute('d', createLine([c1Pos.left, c1Pos.top], [c2Pos.left, c2Pos.top]));
+path1.setAttribute('d', createLine([c1Pos.right, c1Pos.middle], [c2Pos.left, c2Pos.middle]));
 /*
 path2.setAttribute('d', createLine([c1Pos.left, c1Pos.top], [c3Pos.left, c3Pos.top]));
 */
