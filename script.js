@@ -8,7 +8,7 @@ function createLine(source, target){
     source[1] + " " + "Q" + " " +
     source[0] + " " +
     dy + ", " +
-    dx +
+    dx + " " +
     dy
 }
 
