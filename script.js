@@ -46,6 +46,8 @@ var c1 = document.querySelector(".c1"),
 
 drawPath(c1,c2,path1)
 
+drawPath(c2,c3,path2)
+
 /*
 path1.setAttribute('d', createLine([c1Pos.right, c1Pos.middle], [c2Pos.left, c2Pos.middle]));
 
