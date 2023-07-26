@@ -27,6 +27,13 @@ function getPointPos(point){
   return pos;
 }
 
+function drawPath(leftpoint,rightpoint,path) {
+  leftpoint_position = getPointPos(leftpoint)
+  rightpoint_position = getPointPos(rightpoint)
+  draftline = createLine([leftpoint_position.right,leftpoint_position.middle], [rightpoint_position.left,rightpoint_position.middle])
+  path.setAttribute('d',draftline)
+}
+
 var path1 = document.querySelector(".p1"),
     path2 = document.querySelector(".p2");
 
@@ -37,7 +44,10 @@ var c1 = document.querySelector(".c1"),
     c3 = document.querySelector(".c3"),
     c3Pos = getPointPos(c3);
 
-path1.setAttribute('d', createLine([c1Pos.right, c1Pos.middle], [c2Pos.left, c2Pos.middle]));
+drawPath(c1,c2,path1)
+
 /*
+path1.setAttribute('d', createLine([c1Pos.right, c1Pos.middle], [c2Pos.left, c2Pos.middle]));
+
 path2.setAttribute('d', createLine([c1Pos.left, c1Pos.top], [c3Pos.left, c3Pos.top]));
 */
