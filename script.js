@@ -8,13 +8,13 @@ function createLine(source, target){
   return "M" + " " +
     source[0] + " " +
     source[1] + " " + "Q" + " " +
-    source[0] + " " +
-    halfy + ", " +
+    halfx + " " +
+    source[1] + ", " +
     halfx + " " +
     halfy +
     "Q" + " " +
-    target[0] + " " +
-    halfy + ", " +
+    halfx + " " +
+    target[1] + ", " +
     target[0] + " " +
     target[1]
 }
