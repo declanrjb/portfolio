@@ -21,7 +21,7 @@ function createLine(source, target){
 
 function getPointPos(point){
   var pos = $(point).position();
-  pos.right = pos.left + point.clientWidth - 200;
+  pos.right = pos.left + point.clientWidth;
   pos.bottom = pos.top + point.clientHeight;
   pos.middle = pos.top + point.clientHeight/2;
   return pos;
