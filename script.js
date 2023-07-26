@@ -11,7 +11,12 @@ function createLine(source, target){
     source[0] + " " +
     halfy + ", " +
     halfx + " " +
-    halfy
+    halfy +
+    "Q" + " " +
+    target[0] + " " +
+    halfy + ", " +
+    target[0] + " " +
+    target[1]
 }
 
 function getPointPos(point){
@@ -32,4 +37,6 @@ var c1 = document.querySelector(".c1"),
     c3Pos = getPointPos(c3);
 
 path1.setAttribute('d', createLine([c1Pos.left, c1Pos.top], [c2Pos.left, c2Pos.top]));
+/*
 path2.setAttribute('d', createLine([c1Pos.left, c1Pos.top], [c3Pos.left, c3Pos.top]));
+*/
