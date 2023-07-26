@@ -27,5 +27,5 @@ var c1 = document.querySelector(".c1"),
     c3 = document.querySelector(".c3"),
     c3Pos = getPointPos(c3);
 
-path1.setAttribute('d', createLine([c1Pos.right, c1Pos.bottom], [c2Pos.right, c2Pos.bottom]));
+path1.setAttribute('d', createLine([c1Pos.left, c1Pos.top], [c2Pos.left, c2Pos.top]));
 path2.setAttribute('d', createLine([c1Pos.left, c1Pos.top], [c3Pos.left, c3Pos.top]));
