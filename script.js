@@ -37,16 +37,10 @@ function drawPath(leftpoint,rightpoint,path) {
 var path1 = document.querySelector(".p1"),
     path2 = document.querySelector(".p2");
 
-var c1 = document.querySelector(".c1"),
-    c1Pos = getPointPos(c1),
-    c2 = document.querySelector(".c2"),
-    c2Pos = getPointPos(c2),
-    c3 = document.querySelector(".c3"),
-    c3Pos = getPointPos(c3);
+var c1 = document.querySelector("#biden-economy"),
+    c2 = document.querySelector("#democrat-economy-endpoint");
 
 drawPath(c1,c2,path1)
-
-drawPath(c2,c3,path2)
 
 /*
 path1.setAttribute('d', createLine([c1Pos.right, c1Pos.middle], [c2Pos.left, c2Pos.middle]));

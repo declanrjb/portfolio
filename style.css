@@ -11,7 +11,7 @@ path {
   fill: transparent;
   stroke: #000;
   stroke-dasharray: 0px;
-  stroke-width: 5px;
+  stroke-width: 3px;
 }
 
 div {
@@ -51,4 +51,89 @@ div .c3 {
   padding: 60px;
   top: 170px;
   background: green;
+}
+
+/* begin page style */
+
+.dot {
+  height: 25px;
+  width: 25px;
+  background-color: #ffffff;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.endpoint {
+  height: 15px;
+  width: 15px;
+  background-color: #ffffff;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 50%;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 5px;
+  border-color: grey;
+}
+
+.dot-number {
+    position: relative;
+    top: 4px;
+}
+
+.dot-ten {
+    position: relative;
+    top: 4px;
+}
+
+.stack-right .dot-number {
+    right: 8px;
+}
+
+.stack-right .dot-ten {
+    right: 5px;
+}
+
+.stack-left .dot-number {
+    left: 8px;
+}
+
+.stack-left .dot-ten {
+    left: 5px;
+}
+
+.issue-label {
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+.stack-left {
+    width: fit-content;
+}
+
+.stack-right {
+    width: fit-content;
+}
+
+.stack-right > .issue-entry {
+    text-align: right;
+}
+
+.stack-left: > .issue-entry {
+    text-align: left;
+}
+
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }
