@@ -5,10 +5,11 @@ function createLine(source, target){
   
   return "M" +
     source[0] + "," +
-    source[1] + "A" +
-    dr + "," + dr + " 0 0,1 " +
-    target[0] + "," +
-    target[1];
+    source[1] + "Q" +
+    source[0] +
+    source[1] + "," +
+    target[0] +
+    target[1]
 }
 
 function getPointPos(point){
@@ -27,5 +28,5 @@ var c1 = document.querySelector(".c1"),
     c3 = document.querySelector(".c3"),
     c3Pos = getPointPos(c3);
 
-path1.setAttribute('d', createLine([c1Pos.right, c1Pos.bottom], [c2Pos.right, c2Pos.bottom]));
+path1.setAttribute('d', createLine([c1Pos.left, c1Pos.top], [c2Pos.left, c2Pos.top]));
 path2.setAttribute('d', createLine([c1Pos.left, c1Pos.top], [c3Pos.left, c3Pos.top]));
