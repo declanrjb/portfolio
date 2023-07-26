@@ -2,14 +2,16 @@ function createLine(source, target){
   var dx = target[0] - source[0],
       dy = target[1] - source[1],
       dr = Math.sqrt(dx * dx + dy * dy)/1.5;
+      halfx = (target[0] + source[0])/2;
+      halfy = (target[1] + source[1])/2;
   
   return "M" + " " +
     source[0] + " " +
     source[1] + " " + "Q" + " " +
     source[0] + " " +
-    dy + ", " +
-    dx + " " +
-    dy
+    halfy + ", " +
+    halfx + " " +
+    halfy
 }
 
 function getPointPos(point){
