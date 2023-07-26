@@ -37,7 +37,7 @@ function drawPath(leftpoint,rightpoint,path) {
 var path1 = document.querySelector(".p1");
 
 var c1 = document.querySelector("#biden-environment"),
-    c2 = document.querySelector("#democrat-economy-dot");
+    c2 = document.querySelector("#democrat-economy-endpoint");
 
 drawPath(c1,c2,path1)
 
