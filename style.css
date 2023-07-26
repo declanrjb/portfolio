@@ -97,6 +97,7 @@ path {
   clear: both;
 }
 
-.p1 {
+.connector-path {
   position: absolute;
+  transform: translate(-125px, 0px);
 }
