@@ -1,7 +1,7 @@
 function createLine(source, target){
   var dx = target[0] - source[0],
       dy = target[1] - source[1],
-      dr = Math.sqrt(dx * dx + dy * dy)/.5;
+      dr = Math.sqrt(dx * dx + dy * dy)/1.5;
   
   return "M" +
     source[0] + "," +
