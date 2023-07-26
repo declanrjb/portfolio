@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Declan Bradley - Portfolio</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="shortcut icon" type="image/x-icon" href="quill.ico">
+<script src="https://kit.fontawesome.com/bb1d08a9b2.js" crossorigin="anonymous"></script>
+<style>
+
+.dot {
+  height: 25px;
+  width: 25px;
+  background-color: #ffffff;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.endpoint {
+  height: 15px;
+  width: 15px;
+  background-color: #ffffff;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 50%;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 5px;
+  border-color: grey;
+}
+
+.dot-number {
+    position: relative;
+    top: 4px;
+}
+
+.dot-ten {
+    position: relative;
+    top: 4px;
+}
+
+.stack-right .dot-number {
+    right: 8px;
+}
+
+.stack-right .dot-ten {
+    right: 5px;
+}
+
+.stack-left .dot-number {
+    left: 8px;
+}
+
+.stack-left .dot-ten {
+    left: 5px;
+}
+
+.issue-label {
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+.stack-left {
+    width: fit-content;
+}
+
+.stack-right {
+    width: fit-content;
+}
+
+.stack-right > .issue-entry {
+    text-align: right;
+}
+
+.stack-left: > .issue-entry {
+    text-align: left;
+}
+
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+</style>
+</head>
+<body>
+
+<div class="row">
+    <div class="column">
+        <div class="stack-right" id="stack-right-blunt">
+            <div class="issue-entry"><a class="issue-label">The Economy</a><span class="dot"><a class="dot-number">1</a></span></div>
+            <div class="issue-entry"><a class="issue-label">Healthcare</a><span class="dot"><a class="dot-number">2</a></span></div>
+            <div class="issue-entry"><a class="issue-label">War/Conflict</a><span class="dot"><a class="dot-number">3</a></span></div>
+            <div class="issue-entry"><a class="issue-label">Environment</a><span class="dot"><a class="dot-number">4</a></span></div>
+            <div class="issue-entry"><a class="issue-label">Inequality</a><span class="dot"><a class="dot-number">5</a></span></div>
+            <div class="issue-entry"><a class="issue-label">Crime</a><span class="dot"><a class="dot-number">6</a></span></div>
+            <div class="issue-entry"><a class="issue-label">Morality</a><span class="dot"><a class="dot-number">7</a></span></div>
+            <div class="issue-entry"><a class="issue-label">Abortion</a><span class="dot"><a class="dot-number">8</a></span></div>
+            <div class="issue-entry"><a class="issue-label">Immigration</a><span class="dot"><a class="dot-number">9</a></span></div>
+            <div class="issue-entry"><a class="issue-label">Terrorism</a><span class="dot"><a class="dot-ten">10</a></span></div>
+        </div>
+    </div>
+    <div class="column">
+        <div class="stack-right" id="stack-right-endpoints">
+            <div class="issue-entry">
+                <span class="endpoint"></span>
+                <a class="issue-label">The Economy</a>
+                <span class="dot">
+                    <a class="dot-number">1</a>
+                </span>
+            </div>
+            <div class="issue-entry">
+                <span class="endpoint"></span>
+                <a class="issue-label">Crime</a>
+                <span class="dot">
+                    <a class="dot-number">2</a>
+                </span>
+            </div>
+            <div class="issue-entry">
+                <span class="endpoint"></span>
+                <a class="issue-label">Immigration</a>
+                <span class="dot">
+                    <a class="dot-number">3</a>
+                </span>
+            </div>
+            <div class="issue-entry">
+                <span class="endpoint"></span>
+                <a class="issue-label">Inequality</a>
+                <span class="dot">
+                    <a class="dot-number">4</a>
+                </span>
+            </div>
+            <div class="issue-entry">
+                <span class="endpoint"></span>
+                <a class="issue-label">Morality</a>
+                <span class="dot">
+                    <a class="dot-number">5</a>
+                </span>
+            </div>
+            <div class="issue-entry">
+                <span class="endpoint"></span>
+                <a class="issue-label">Healthcare</a>
+                <span class="dot">
+                    <a class="dot-number">6</a>
+                </span>
+            </div>
+            <div class="issue-entry">
+                <span class="endpoint"></span>
+                <a class="issue-label">Environment</a>
+                <span class="dot">
+                    <a class="dot-number">7</a>
+                </span>
+            </div>
+            <div class="issue-entry">
+                <span class="endpoint"></span>
+                <a class="issue-label">Abortion</a>
+                <span class="dot">
+                    <a class="dot-number">8</a>
+                </span>
+            </div>
+            <div class="issue-entry">
+                <span class="endpoint"></span>
+                <a class="issue-label">Terrorism</a>
+                <span class="dot">
+                    <a class="dot-number">9</a>
+                </span>
+            </div>
+            <div class="issue-entry">
+                <span class="endpoint"></span>
+                <a class="issue-label">War/Conflict</a>
+                <span class="dot">
+                    <a class="dot-ten">10</a>
+                </span>
+            </div>
+        </div>
+    </div>
+    <div class="column">
+        <div class="stack-left" id="stack-left-endpoints">
+            <div class="issue-entry">
+                <span class="dot">
+                    <a class="dot-number">1</a>
+                </span>
+                <a class="issue-label">The Economy</a>
+                <span class="endpoint"></span>
+            </div>
+            <div class="issue-entry">
+                <span class="dot">
+                    <a class="dot-number">2</a>
+                </span>
+                <a class="issue-label">Crime</a>
+                <span class="endpoint"></span>
+            </div>
+            <div class="issue-entry">
+                <span class="dot">
+                    <a class="dot-number">3</a>
+                </span>
+                <a class="issue-label">Immigration</a>
+                <span class="endpoint"></span>
+            </div>
+            <div class="issue-entry">
+                <span class="dot">
+                    <a class="dot-number">4</a>
+                </span>
+                <a class="issue-label">Inequality</a>
+                <span class="endpoint"></span>
+            </div>
+            <div class="issue-entry">
+                <span class="dot">
+                    <a class="dot-number">5</a>
+                </span>
+                <a class="issue-label">Morality</a>
+                <span class="endpoint"></span>
+            </div>
+            <div class="issue-entry">
+                <span class="dot">
+                    <a class="dot-number">6</a>
+                </span>
+                <a class="issue-label">Healthcare</a>
+                <span class="endpoint"></span>
+            </div>
+            <div class="issue-entry">
+                <span class="dot">
+                    <a class="dot-number">7</a>
+                </span>
+                <a class="issue-label">Environment</a>
+                <span class="endpoint"></span>
+            </div>
+            <div class="issue-entry">
+                <span class="dot">
+                    <a class="dot-number">8</a>
+                </span>
+                <a class="issue-label">Terrorism</a>
+                <span class="endpoint"></span>
+            </div>
+            <div class="issue-entry">
+                <span class="dot">
+                    <a class="dot-number">9</a>
+                </span>
+                <a class="issue-label">Abortion</a>
+                <span class="endpoint"></span>
+            </div>
+            <div class="issue-entry">
+                <span class="dot">
+                    <a class="dot-ten">10</a>
+                </span>
+                <a class="issue-label">War/Conflict</a>
+                <span class="endpoint"></span>
+            </div>
+        </div>
+    </div>
+    <div class="column">
+        <div class="stack-left" id="stack-left-blunt">
+            <div class="issue-entry">
+                <span class="dot">
+                    <a class="dot-number">1</a>
+                </span>
+                <a class="issue-label">The Economy</a>
+            </div>
+            <div class="issue-entry">
+                <span class="dot">
+                    <a class="dot-number">2</a>
+                </span>
+                <a class="issue-label">Crime</a>
+            </div>
+            <div class="issue-entry">
+                <span class="dot">
+                    <a class="dot-number">3</a>
+                </span>
+                <a class="issue-label">Immigration</a>
+            </div>
+            <div class="issue-entry">
+                <span class="dot">
+                    <a class="dot-number">4</a>
+                </span>
+                <a class="issue-label">Inequality</a>
+            </div>
+            <div class="issue-entry">
+                <span class="dot">
+                    <a class="dot-number">5</a>
+                </span>
+                <a class="issue-label">War/Conflict</a>
+            </div>
+            <div class="issue-entry">
+                <span class="dot">
+                    <a class="dot-number">6</a>
+                </span>
+                <a class="issue-label">Environment</a>
+            </div>
+            <div class="issue-entry">
+                <span class="dot">
+                    <a class="dot-number">7</a>
+                </span>
+                <a class="issue-label">Healthcare</a>
+            </div>
+            <div class="issue-entry">
+                <span class="dot">
+                    <a class="dot-number">8</a>
+                </span>
+                <a class="issue-label">Morality</a>
+            </div>
+            <div class="issue-entry">
+                <span class="dot">
+                    <a class="dot-number">9</a>
+                </span>
+                <a class="issue-label">Terrorism</a>
+            </div>
+            <div class="issue-entry">
+                <span class="dot">
+                    <a class="dot-ten">10</a>
+                </span>
+                <a class="issue-label">Abortion</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+</body>
+</html>
