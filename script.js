@@ -159,12 +159,12 @@ var rep_economy_line = document.querySelector("#rep-economy-line"),
 
 drawPath(biden_economy,democrat_economy_endpoint,dem_economy_line);
 drawPath(biden_healthcare,democrat_healthcare_endpoint,dem_healthcare_line);
-drawPath(biden_war,democrat_war_endpoint,dem_war_line);
+drawPath(biden_war,democrat_war_endpoint,dem_war_line,2,1.5);
 drawPath(biden_environment,democrat_environment_endpoint,dem_environment_line);
 drawPath(biden_crime,democrat_crime_endpoint,dem_crime_line);
 drawPath(biden_morality,democrat_morality_endpoint,dem_morality_line);
 drawPath(biden_abortion,democrat_abortion_endpoint,dem_abortion_line);
-drawPath(biden_immigration,democrat_immigration_endpoint,dem_immigration_line,3,2);
+drawPath(biden_immigration,democrat_immigration_endpoint,dem_immigration_line,2.5,2);
 drawPath(biden_terrorism,democrat_terrorism_endpoint,dem_terrorism_line);
 drawPath(biden_inequality,democrat_inequality_endpoint,dem_inequality_line);
 
