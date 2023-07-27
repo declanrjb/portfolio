@@ -101,3 +101,8 @@ path {
   position: absolute;
   transform: translate(-125px, 0px);
 }
+
+.middle-path {
+  position: absolute;
+  transform: translate(-500px, 0px);
+}
