@@ -7,12 +7,12 @@ function createLine(source, target, deflection_x=2, deflection_y=2){
   
   return "M" + " " +
     source[0] + " " +
-    source[1] + " " + "Q" + " " +
+    source[1] + " " + "q" + " " +
     halfx + " " +
     source[1] + ", " +
     halfx + " " +
     halfy + " " +
-    "Q" + " " +
+    "q" + " " +
     halfx + " " +
     target[1] + ", " +
     target[0] + " " +
