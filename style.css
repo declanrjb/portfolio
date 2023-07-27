@@ -6,7 +6,7 @@ svg {
 
 path {
   fill: transparent;
-  stroke: #000;
+  stroke: grey;
   stroke-dasharray: 0px;
   stroke-width: 3px;
 }
