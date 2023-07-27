@@ -105,7 +105,7 @@ var rep_economy_dot = document.querySelector("#rep-economy-dot"),
     rep_immigration_dot = document.querySelector("#rep-immigration-dot"),
     democrat_immigration_dot = document.querySelector("#democrat-immigration-dot"),
 
-    rep_terrorism_dot = document.querySelector("#rep-terrorism"),
+    rep_terrorism_dot = document.querySelector("#rep-terrorism-dot"),
     democrat_terrorism_dot = document.querySelector("#democrat-terrorism-dot");
 
 drawPath(biden_economy,democrat_economy_endpoint,dem_economy_line);
@@ -117,6 +117,7 @@ drawPath(biden_morality,democrat_morality_endpoint,dem_morality_line);
 drawPath(biden_abortion,democrat_abortion_endpoint,dem_abortion_line);
 drawPath(biden_immigration,democrat_immigration_endpoint,dem_immigration_line);
 drawPath(biden_terrorism,democrat_terrorism_endpoint,dem_terrorism_line);
+drawPath(biden_inequality,democrat_inequality_endpoint,dem_inequality_line);
 
 drawPath(democrat_economy_dot,rep_economy_dot,voters_economy_line);
 drawPath(democrat_healthcare_dot,rep_healthcare_dot,voters_healthcare_line);
@@ -127,5 +128,6 @@ drawPath(democrat_morality_dot,rep_morality_dot,voters_morality_line);
 drawPath(democrat_abortion_dot,rep_abortion_dot,voters_abortion_line);
 drawPath(democrat_immigration_dot,rep_immigration_dot,voters_immigration_line);
 drawPath(democrat_terrorism_dot,rep_terrorism_dot,voters_terrorism_line);
+drawPath(democrat_inequality_dot,rep_inequality_dot,voters_inequality_line);
 
 
