@@ -8,7 +8,14 @@ path {
   fill: transparent;
   stroke: #000;
   stroke-dasharray: 0px;
-  stroke-width: 3px;
+  stroke-width: 2px;
+}
+
+path:hover {
+  fill: transparent;
+  stroke: #000;
+  stroke-dasharray: 0px;
+  stroke-width: 5px;
 }
 
 /* begin page style */
