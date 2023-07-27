@@ -1,5 +1,5 @@
 svg {
-  width: 200px;
+  width: 300px;
   height: 450px;
   background-color: white;
 }
@@ -140,4 +140,31 @@ path:hover {
 .bottom-text {
   font-size: 1.1em;
   line-height: 1.5em;
+}
+
+.section-breaker {
+  height: 2px;
+  background-color: #000000;
+}
+
+#breaker-democrat {
+  height: 2px;
+  background-color: blue;
+}
+
+#breaker-republican {
+  height: 2px;
+  background-color: red;
+}
+
+#header-republican {
+  color: red;
+}
+
+#header-democrat {
+  color: blue;
+}
+
+#svg-column {
+  width: 200px;
 }

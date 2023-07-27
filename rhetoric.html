@@ -20,7 +20,7 @@
     <hr>
     <div class="column">
         <p class="section-header">Joe Biden</p>
-        <hr>
+        <hr class="section-breaker" id="breaker-biden">
         <div class="stack-right" id="stack-right-blunt">
             <div class="issue-entry"><a class="issue-label">The Economy</a><span class="dot" id="biden-economy"><a class="dot-number">1</a></span></div>
             <div class="issue-entry"><a class="issue-label">Healthcare</a><span class="dot" id="biden-healthcare"><a class="dot-number">2</a></span></div>
@@ -34,7 +34,7 @@
             <div class="issue-entry"><a class="issue-label">Terrorism</a><span class="dot" id="biden-terrorism"><a class="dot-ten">10</a></span></div>
         </div>
     </div>
-    <div class="column">
+    <div class="column" id="svg-column">
         <svg>
             <path class="connector-path" id="dem-economy-line"></path>
             <path class="connector-path" id="dem-healthcare-line"></path>
@@ -49,8 +49,8 @@
         </svg>
     </div>
     <div class="column">
-        <p class="section-header">Democrats</p>
-        <hr>
+        <p class="section-header" id="header-democrat">Democrats</p>
+        <hr class="section-breaker" id="breaker-democrat">
         <div class="stack-right" id="stack-right-endpoints">
             <div class="issue-entry">
                 <span class="endpoint" id="democrat-economy-endpoint"></span>
@@ -124,7 +124,7 @@
             </div>
         </div>
     </div>
-    <div class="column">
+    <div class="column" id="svg-column">
         <svg>
             <path class="middle-path" id="voters-economy-line"></path>
             <path class="middle-path" id="voters-healthcare-line"></path>
@@ -139,8 +139,8 @@
         </svg>
     </div>
     <div class="column">
-        <p class="section-header">Republicans</p>
-        <hr>
+        <p class="section-header" id="header-republican">Republicans</p>
+        <hr class="section-breaker" id="breaker-republican">
         <div class="stack-left" id="stack-left-endpoints">
             <div class="issue-entry">
                 <span class="dot" id="rep-economy-dot">
@@ -214,7 +214,7 @@
             </div>
         </div>
     </div>
-    <div class="column">
+    <div class="column" id="svg-column">
         <svg>
             <path class="right-path" id="rep-economy-line"></path>
             <path class="right-path" id="rep-healthcare-line"></path>
@@ -230,7 +230,7 @@
     </div>
     <div class="column">
         <p class="section-header">Donald Trump</p>
-        <hr>
+        <hr class="section-breaker" id="breaker-trump">
         <div class="stack-left" id="stack-left-blunt">
             <div class="issue-entry">
                 <span class="dot" id="trump-economy">
