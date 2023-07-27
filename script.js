@@ -159,7 +159,7 @@ var rep_economy_line = document.querySelector("#rep-economy-line"),
 
 drawPath(biden_economy,democrat_economy_endpoint,dem_economy_line);
 drawPath(biden_healthcare,democrat_healthcare_endpoint,dem_healthcare_line);
-drawPath(biden_war,democrat_war_endpoint,dem_war_line,2.5,1.8);
+drawPath(biden_war,democrat_war_endpoint,dem_war_line,2.25,1.8);
 drawPath(biden_environment,democrat_environment_endpoint,dem_environment_line);
 drawPath(biden_crime,democrat_crime_endpoint,dem_crime_line);
 drawPath(biden_morality,democrat_morality_endpoint,dem_morality_line);
