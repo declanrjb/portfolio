@@ -1,9 +1,9 @@
-function createLine(source, target){
+function createLine(source, target, deflection_x=2, deflection_y=2){
   var dx = target[0] - source[0],
       dy = target[1] - source[1],
       dr = Math.sqrt(dx * dx + dy * dy)/1.5;
-      halfx = (target[0] + source[0])/2;
-      halfy = (target[1] + source[1])/2;
+      halfx = (target[0] + source[0])/deflection_x;
+      halfy = (target[1] + source[1])/deflection_y;
   
   return "M" + " " +
     source[0] + " " +
@@ -27,10 +27,10 @@ function getPointPos(point){
   return pos;
 }
 
-function drawPath(leftpoint,rightpoint,path) {
+function drawPath(leftpoint,rightpoint,path, deflection_x=2, deflection_y=2) {
   leftpoint_position = getPointPos(leftpoint)
   rightpoint_position = getPointPos(rightpoint)
-  draftline = createLine([leftpoint_position.right,leftpoint_position.middle], [rightpoint_position.left,rightpoint_position.middle])
+  draftline = createLine([leftpoint_position.right,leftpoint_position.middle], [rightpoint_position.left,rightpoint_position.middle], deflection_x, deflection_y)
   path.setAttribute('d',draftline)
 }
 
@@ -164,7 +164,7 @@ drawPath(biden_environment,democrat_environment_endpoint,dem_environment_line);
 drawPath(biden_crime,democrat_crime_endpoint,dem_crime_line);
 drawPath(biden_morality,democrat_morality_endpoint,dem_morality_line);
 drawPath(biden_abortion,democrat_abortion_endpoint,dem_abortion_line);
-drawPath(biden_immigration,democrat_immigration_endpoint,dem_immigration_line);
+drawPath(biden_immigration,democrat_immigration_endpoint,dem_immigration_line,3,2);
 drawPath(biden_terrorism,democrat_terrorism_endpoint,dem_terrorism_line);
 drawPath(biden_inequality,democrat_inequality_endpoint,dem_inequality_line);
 
