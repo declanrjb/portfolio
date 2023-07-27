@@ -1,6 +1,6 @@
 svg {
   width: 200px;
-  height: 500px;
+  height: 450px;
   background-color: white;
 }
 
@@ -123,4 +123,21 @@ path:hover {
   text-align: center;
   font-weight: bold;
   margin-bottom: 0px;
+}
+
+.headline {
+  font-size: 1.5em;
+  width: 100%;
+  margin-bottom: 0px;
+  text-align: center;
+}
+
+.viz-wrapper {
+  width: 1205px;
+  padding-left: 50px;
+}
+
+.bottom-text {
+  font-size: 1.1em;
+  line-height: 1.5em;
 }
