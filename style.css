@@ -1,12 +1,14 @@
 svg {
   width: 300px;
   height: 450px;
-  background-color: white;
+  background-color: transparent;
+  position: relative;
+  left: -50px;
 }
 
 path {
   fill: transparent;
-  stroke: grey;
+  stroke: #000000;
   stroke-dasharray: 0px;
   stroke-width: 3px;
 }
@@ -106,17 +108,17 @@ path:hover {
 
 .connector-path {
   position: absolute;
-  transform: translate(-175px, -70px);
+  transform: translate(-125px, -70px);
 }
 
 .middle-path {
   position: absolute;
-  transform: translate(-550px, -70px);
+  transform: translate(-500px, -70px);
 }
 
 .right-path {
   position: absolute;
-  transform: translate(-920px, -70px);
+  transform: translate(-870px, -70px);
 }
 
 .section-header {
