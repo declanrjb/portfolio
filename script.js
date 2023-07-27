@@ -51,7 +51,7 @@ function drawPath(leftpoint,rightpoint,path, deflection_x=2, deflection_y=2) {
 function drawLine(leftpoint,rightpoint,path) {
   leftpoint_position = getPointPos(leftpoint)
   rightpoint_position = getPointPos(rightpoint)
-  draftline = createStraightLine([leftpoint_position.right,leftpoint_position.middle], [rightpoint_position.left,rightpoint_position.middle], deflection_x, deflection_y)
+  draftline = createStraightLine([leftpoint_position.right,leftpoint_position.middle], [rightpoint_position.left,rightpoint_position.middle])
   path.setAttribute('d',draftline)
 }
 
