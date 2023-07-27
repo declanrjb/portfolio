@@ -116,6 +116,36 @@ var rep_economy_dot = document.querySelector("#rep-economy-dot"),
     rep_inequality_dot = document.querySelector("#rep-inequality-dot"),
     democrat_inequality_dot = document.querySelector("#democrat-inequality-dot");
 
+var trump_economy = document.querySelector("#trump-economy"),
+    rep_economy_endpoint = document.querySelector("#rep-economy-endpoint"),
+
+    trump_healthcare = document.querySelector("#trump-healthcare"),
+    rep_healthcare_endpoint = document.querySelector("#rep-healthcare-endpoint"),
+
+    trump_war = document.querySelector("#trump-war"),
+    rep_war_endpoint = document.querySelector("#rep-war-endpoint"),
+
+    trump_environment = document.querySelector("#trump-environment"),
+    rep_environment_endpoint = document.querySelector("#rep-environment-endpoint"),
+
+    trump_crime = document.querySelector("#trump-crime"),
+    rep_crime_endpoint = document.querySelector("#rep-crime-endpoint"),
+
+    trump_morality = document.querySelector("#trump-morality"),
+    rep_morality_endpoint = document.querySelector("#rep-morality-endpoint"),
+
+    trump_abortion = document.querySelector("#trump-abortion"),
+    rep_abortion_endpoint = document.querySelector("#rep-abortion-endpoint"),
+
+    trump_immigration = document.querySelector("#trump-immigration"),
+    rep_immigration_endpoint = document.querySelector("#rep-immigration-endpoint"),
+
+    trump_terrorism = document.querySelector("#trump-terrorism"),
+    rep_terrorism_endpoint = document.querySelector("#rep-terrorism-endpoint"),
+
+    trump_inequality = document.querySelector("#trump-inequality"),
+    rep_inequality_endpoint = document.querySelector("#rep-inequality-endpoint");
+
 drawPath(biden_economy,democrat_economy_endpoint,dem_economy_line);
 drawPath(biden_healthcare,democrat_healthcare_endpoint,dem_healthcare_line);
 drawPath(biden_war,democrat_war_endpoint,dem_war_line);
@@ -137,5 +167,16 @@ drawPath(democrat_abortion_dot,rep_abortion_dot,voters_abortion_line);
 drawPath(democrat_immigration_dot,rep_immigration_dot,voters_immigration_line);
 drawPath(democrat_terrorism_dot,rep_terrorism_dot,voters_terrorism_line);
 drawPath(democrat_inequality_dot,rep_inequality_dot,voters_inequality_line);
+
+drawPath(rep_economy_endpoint,trump_economy,rep_economy_line);
+drawPath(rep_healthcare_endpoint,trump_healthcare,rep_healthcare_line);
+drawPath(rep_war_endpoint,trump_war,rep_war_line);
+drawPath(rep_environment_endpoint,trump_environment,rep_environment_line);
+drawPath(rep_crime_endpoint,trump_crime,rep_crime_line);
+drawPath(rep_morality_endpoint,trump_morality,rep_morality_line);
+drawPath(rep_abortion_endpoint,trump_abortion,rep_abortion_line);
+drawPath(rep_immigration_endpoint,trump_immigration,rep_immigration_line);
+drawPath(rep_terrorism_endpoint,trump_terrorism,rep_terrorism_line);
+drawPath(rep_inequality_endpoint,trump_inequality,rep_inequality_line);
 
 
