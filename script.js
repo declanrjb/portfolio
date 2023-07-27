@@ -53,10 +53,26 @@ var biden_economy = document.querySelector("#biden-economy"),
     democrat_environment_endpoint = document.querySelector("#democrat-environment-endpoint"),
 
     biden_crime = document.querySelector("#biden-crime"),
-    democrat_crime_endpoint = document.querySelector("#democrat-crime-endpoint");
+    democrat_crime_endpoint = document.querySelector("#democrat-crime-endpoint"),
+
+    biden_morality = document.querySelector("#biden-morality"),
+    democrat_morality_endpoint = document.querySelector("#democrat-morality-endpoint"),
+
+    biden_abortion = document.querySelector("#biden-abortion"),
+    democrat_abortion_endpoint = document.querySelector("#democrat-abortion-endpoint"),
+
+    biden_immigration = document.querySelector("#biden-immigration"),
+    democrat_immigration_endpoint = document.querySelector("#democrat-immigration-endpoint"),
+
+    biden_terrorism = document.querySelector("#biden-terrorism"),
+    democrat_terrorism_endpoint = document.querySelector("#democrat-terrorism-endpoint");
 
 drawPath(biden_economy,democrat_economy_endpoint,dem_economy_line);
 drawPath(biden_healthcare,democrat_healthcare_endpoint,dem_healthcare_line);
 drawPath(biden_war,democrat_war_endpoint,dem_war_line);
 drawPath(biden_environment,democrat_environment_endpoint,dem_environment_line);
 drawPath(biden_crime,democrat_crime_endpoint,dem_crime_line);
+drawPath(biden_morality,democrat_morality_endpoint,dem_morality_line);
+drawPath(biden_abortion,democrat_abortion_endpoint,dem_abortion_line);
+drawPath(biden_immigration,democrat_immigration_endpoint,dem_immigration_line);
+drawPath(biden_terrorism,democrat_terrorism_endpoint,dem_terrorism_line);
