@@ -11,7 +11,7 @@ function createLine(source, target){
     halfx + " " +
     source[1] + ", " +
     halfx + " " +
-    halfy +
+    halfy + " " +
     "Q" + " " +
     halfx + " " +
     target[1] + ", " +
