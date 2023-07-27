@@ -69,7 +69,10 @@ var biden_economy = document.querySelector("#biden-economy"),
     democrat_immigration_endpoint = document.querySelector("#democrat-immigration-endpoint"),
 
     biden_terrorism = document.querySelector("#biden-terrorism"),
-    democrat_terrorism_endpoint = document.querySelector("#democrat-terrorism-endpoint");
+    democrat_terrorism_endpoint = document.querySelector("#democrat-terrorism-endpoint"),
+
+    biden_inequality = document.querySelector("#biden-inequality"),
+    democrat_inequality_endpoint = document.querySelector("#democrat-inequality-endpoint");
 
 var voters_economy_line = document.querySelector("#voters-economy-line"),
     voters_healthcare_line = document.querySelector("#voters-healthcare-line"),
@@ -106,7 +109,10 @@ var rep_economy_dot = document.querySelector("#rep-economy-dot"),
     democrat_immigration_dot = document.querySelector("#democrat-immigration-dot"),
 
     rep_terrorism_dot = document.querySelector("#rep-terrorism-dot"),
-    democrat_terrorism_dot = document.querySelector("#democrat-terrorism-dot");
+    democrat_terrorism_dot = document.querySelector("#democrat-terrorism-dot"),
+
+    rep_inequality_dot = document.querySelector("#rep-inequality-dot"),
+    democrat_inequality_dot = document.querySelector("#democrat-inequality-dot");
 
 drawPath(biden_economy,democrat_economy_endpoint,dem_economy_line);
 drawPath(biden_healthcare,democrat_healthcare_endpoint,dem_healthcare_line);
