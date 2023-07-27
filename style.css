@@ -189,9 +189,9 @@ path:hover {
 .link {
   text-decoration: none;
   font-weight: bold;
-  color: blue;
+  color: darkblue;
 }
 
 .link:hover {
-  color: darkblue;
+  color: black;
 }
