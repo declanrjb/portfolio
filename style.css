@@ -20,15 +20,15 @@ path:hover {
 }
 
 .connector-path:hover {
-  color: blue;
+  stroke: blue;
 }
 
 .middle-path:hover {
-  color: black;
+  stroke: black;
 }
 
 .right-path:hover {
-  color: red;
+  stroke: red;
 }
 
 /* begin page style */
