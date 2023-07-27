@@ -36,15 +36,27 @@ function drawPath(leftpoint,rightpoint,path) {
 
 var dem_economy_line = document.querySelector("#dem-economy-line"),
     dem_healthcare_line = document.querySelector("#dem-healthcare-line"),
-    dem_war_line = document.querySelector("#dem-war-line");
+    dem_war_line = document.querySelector("#dem-war-line"),
+    dem_environment_line = document.querySelector("#dem-environment-line"),
+    dem_crime_line = document.querySelector("#dem-crime-line");
 
 var biden_economy = document.querySelector("#biden-economy"),
     democrat_economy_endpoint = document.querySelector("#democrat-economy-endpoint"),
+
     biden_healthcare = document.querySelector("#biden-healthcare"),
     democrat_healthcare_endpoint = document.querySelector("#democrat-healthcare-endpoint"),
+
     biden_war = document.querySelector("#biden-war"),
-    democrat_war_endpoint = document.querySelector("#democrat-war-endpoint");
+    democrat_war_endpoint = document.querySelector("#democrat-war-endpoint"),
+
+    biden_environment = document.querySelector("#biden-environment"),
+    democrat_environment_endpoint = document.querySelector("#democrat-environment-endpoint"),
+
+    biden_crime = document.querySelector("#biden-crime"),
+    democrat_crime_endpoint = document.querySelector("#democrat-crime-endpoint");
 
 drawPath(biden_economy,democrat_economy_endpoint,dem_economy_line);
 drawPath(biden_healthcare,democrat_healthcare_endpoint,dem_healthcare_line);
 drawPath(biden_war,democrat_war_endpoint,dem_war_line);
+drawPath(biden_environment,democrat_environment_endpoint,dem_environment_line);
+drawPath(biden_crime,democrat_crime_endpoint,dem_crime_line);
