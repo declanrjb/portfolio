@@ -20,12 +20,6 @@ function createLine(source, target, deflection_x=2, deflection_y=2){
 }
 
 function createStraightLine(source, target){
-  var dx = target[0] - source[0],
-      dy = target[1] - source[1],
-      dr = Math.sqrt(dx * dx + dy * dy)/1.5;
-      halfx = (target[0] + source[0])/deflection_x;
-      halfy = (target[1] + source[1])/deflection_y;
-  
   return "M" + " " +
     source[0] + " " +
     source[1] + " " + "L" + " " +
