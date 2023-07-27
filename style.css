@@ -106,3 +106,8 @@ path {
   position: absolute;
   transform: translate(-500px, 0px);
 }
+
+.right-path {
+  position: absolute;
+  transform: translate(-870px, 0px);
+}
