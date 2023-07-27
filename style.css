@@ -1,6 +1,6 @@
 svg {
   width: 200px;
-  height: 400px;
+  height: 500px;
   background-color: white;
 }
 
@@ -117,4 +117,10 @@ path:hover {
 .right-path {
   position: absolute;
   transform: translate(-870px, 0px);
+}
+
+.section-header {
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 0px;
 }
