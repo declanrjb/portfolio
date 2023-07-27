@@ -181,7 +181,7 @@ drawPath(democrat_inequality_dot,rep_inequality_dot,voters_inequality_line);
 
 drawPath(rep_economy_endpoint,trump_economy,rep_economy_line);
 drawPath(rep_healthcare_endpoint,trump_healthcare,rep_healthcare_line);
-drawPath(rep_war_endpoint,trump_war,rep_war_line,1.5,2);
+drawPath(rep_war_endpoint,trump_war,rep_war_line,2.5,2);
 drawPath(rep_environment_endpoint,trump_environment,rep_environment_line);
 drawPath(rep_crime_endpoint,trump_crime,rep_crime_line);
 drawPath(rep_morality_endpoint,trump_morality,rep_morality_line);

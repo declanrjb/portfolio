@@ -17,7 +17,7 @@ path:hover {
   fill: transparent;
   stroke: #000;
   stroke-dasharray: 0px;
-  stroke-width: 4px;
+  stroke-width: 5px;
 }
 
 /* begin page style */
@@ -31,6 +31,8 @@ path:hover {
   border-radius: 50%;
   display: inline-block;
   margin-bottom: 10px;
+  position: relative;
+  z-index: 1000;
 }
 
 .endpoint {
@@ -44,6 +46,8 @@ path:hover {
   vertical-align: middle;
   margin-right: 5px;
   border-color: grey;
+  position: relative;
+  z-index: 1000;
 }
 
 .dot-number {
