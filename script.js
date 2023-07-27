@@ -39,10 +39,10 @@ var dem_economy_line = document.querySelector("#dem-economy-line"),
     dem_war_line = document.querySelector("#dem-war-line"),
     dem_environment_line = document.querySelector("#dem-environment-line"),
     dem_crime_line = document.querySelector("#dem-crime-line"),
-    dem_crime_line = document.querySelector("#dem-morality-line"),
-    dem_crime_line = document.querySelector("#dem-abortion-line"),
-    dem_crime_line = document.querySelector("#dem-immigration-line"),
-    dem_crime_line = document.querySelector("#dem-terrorism-line");
+    dem_morality_line = document.querySelector("#dem-morality-line"),
+    dem_abortion_line = document.querySelector("#dem-abortion-line"),
+    dem_immigration_line = document.querySelector("#dem-immigration-line"),
+    dem_terrorism_line = document.querySelector("#dem-terrorism-line");
 
 var biden_economy = document.querySelector("#biden-economy"),
     democrat_economy_endpoint = document.querySelector("#democrat-economy-endpoint"),
