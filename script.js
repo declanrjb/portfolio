@@ -146,6 +146,17 @@ var trump_economy = document.querySelector("#trump-economy"),
     trump_inequality = document.querySelector("#trump-inequality"),
     rep_inequality_endpoint = document.querySelector("#rep-inequality-endpoint");
 
+var rep_economy_line = document.querySelector("#rep-economy-line"),
+    rep_healthcare_line = document.querySelector("#rep-healthcare-line"),
+    rep_war_line = document.querySelector("#rep-war-line"),
+    rep_environment_line = document.querySelector("#rep-environment-line"),
+    rep_crime_line = document.querySelector("#rep-crime-line"),
+    rep_morality_line = document.querySelector("#rep-morality-line"),
+    rep_abortion_line = document.querySelector("#rep-abortion-line"),
+    rep_immigration_line = document.querySelector("#rep-immigration-line"),
+    rep_terrorism_line = document.querySelector("#rep-terrorism-line"),
+    rep_inequality_line = document.querySelector("#rep-inequality-line");
+
 drawPath(biden_economy,democrat_economy_endpoint,dem_economy_line);
 drawPath(biden_healthcare,democrat_healthcare_endpoint,dem_healthcare_line);
 drawPath(biden_war,democrat_war_endpoint,dem_war_line);
