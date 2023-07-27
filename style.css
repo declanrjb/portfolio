@@ -185,3 +185,13 @@ path:hover {
 #svg-column {
   width: 200px;
 }
+
+.link {
+  text-decoration: none;
+  font-weight: bold;
+  color: blue;
+}
+
+.link:hover {
+  color: darkblue;
+}
