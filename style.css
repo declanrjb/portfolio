@@ -15,9 +15,20 @@ path {
 
 path:hover {
   fill: transparent;
-  stroke: #000;
   stroke-dasharray: 0px;
   stroke-width: 5px;
+}
+
+.connector-path:hover {
+  color: blue;
+}
+
+.middle-path:hover {
+  color: black;
+}
+
+.right-path:hover {
+  color: red;
 }
 
 /* begin page style */

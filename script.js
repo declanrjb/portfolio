@@ -19,6 +19,20 @@ function createLine(source, target, deflection_x=2, deflection_y=2){
     target[1]
 }
 
+function createStraightLine(source, target){
+  var dx = target[0] - source[0],
+      dy = target[1] - source[1],
+      dr = Math.sqrt(dx * dx + dy * dy)/1.5;
+      halfx = (target[0] + source[0])/deflection_x;
+      halfy = (target[1] + source[1])/deflection_y;
+  
+  return "M" + " " +
+    source[0] + " " +
+    source[1] + " " + "L" + " " +
+    target[0] + " " +
+    target[1]
+}
+
 function getPointPos(point){
   var pos = $(point).position();
   pos.right = pos.left + point.clientWidth;
@@ -31,6 +45,13 @@ function drawPath(leftpoint,rightpoint,path, deflection_x=2, deflection_y=2) {
   leftpoint_position = getPointPos(leftpoint)
   rightpoint_position = getPointPos(rightpoint)
   draftline = createLine([leftpoint_position.right,leftpoint_position.middle], [rightpoint_position.left,rightpoint_position.middle], deflection_x, deflection_y)
+  path.setAttribute('d',draftline)
+}
+
+function drawLine(leftpoint,rightpoint,path) {
+  leftpoint_position = getPointPos(leftpoint)
+  rightpoint_position = getPointPos(rightpoint)
+  draftline = createStraightLine([leftpoint_position.right,leftpoint_position.middle], [rightpoint_position.left,rightpoint_position.middle], deflection_x, deflection_y)
   path.setAttribute('d',draftline)
 }
 
@@ -157,7 +178,7 @@ var rep_economy_line = document.querySelector("#rep-economy-line"),
     rep_terrorism_line = document.querySelector("#rep-terrorism-line"),
     rep_inequality_line = document.querySelector("#rep-inequality-line");
 
-drawPath(biden_economy,democrat_economy_endpoint,dem_economy_line);
+drawLine(biden_economy,democrat_economy_endpoint,dem_economy_line);
 drawPath(biden_healthcare,democrat_healthcare_endpoint,dem_healthcare_line);
 drawPath(biden_war,democrat_war_endpoint,dem_war_line,2.25,1.8);
 drawPath(biden_environment,democrat_environment_endpoint,dem_environment_line);
