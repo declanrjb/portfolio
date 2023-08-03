@@ -7,157 +7,312 @@
 <link rel="shortcut icon" type="image/x-icon" href="quill.ico">
 <script src="https://kit.fontawesome.com/bb1d08a9b2.js" crossorigin="anonymous"></script>
 <style>
-body {
-  font-family: Arial, Helvetica, sans-serif;
+
+.page-margin {
+    width: 15%;
+    height: 500px;
+    float: left;
 }
 
-.mobile-container {
-  margin: auto;
-  background-color: #ffffff;
-  color: white;
-  width: 100%;
+.page {
+    width: 70%;
+    height: fit-content;
+    float: left;
+    box-shadow: 0 1px 5px #666;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+    background-color: #FFFFFF;
 }
 
-.topnav {
-  overflow: hidden;
-  background-color: #ffffff;
-  position: relative;
+.column {
+    float: left;
 }
 
-.topnav #myLinks {
-  display: block;
-  float: right;
+#page-main {
+    width: 60%;
 }
 
-.topnav a {
-  float: left;
-  color: black;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-  text-align: right;
-  vertical-align: middle;
+#page-sidebar {
+    width: 40%;
 }
 
-.topnav a.icon {
-  float: right;
-  color: black;
-  font-size: 30px;
-  vertical-align: middle;
+.content-block {
+    padding: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
-.topnav a:hover {
-  color: #ffffff;
+.page-title {
+    font-size: 3.5em;
+    margin-bottom: 0px;
+    margin-top: 0px;
 }
 
-.active {
-  background-color: #000000;
-  color: white;
+.profile-pic {
+    float: left;
+    width: 25%;
+    border-radius: 50%;
 }
 
-img {
-  border-radius: 50%;
-  position: relative;
-  right: -5em;
-  width: 80%;
-}
-
-#column-left {
-  float: left;
-  width: 50%;
-}
-
-#column-right {
-  float: left;
-  width: 45%;
-  vertical-align: center;
-  position: relative;
-  top:6em
-}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-.row {
+.main-header {
     vertical-align: middle;
 }
 
-p {
-    font-family:'Times New Roman', Times, serif;
-    font-size: 20px;
-    line-height: 1.5;
+.header-text {
+    float: left;
+    position: relative;
 }
 
-h1 {
-    font-family:'Times New Roman', Times, serif;
-}
-
-.fa-brands {
-    font-weight: 400;
-    font-size: 22px;
-}
-
-.fa-solid {
-    font-weight: 900;
-    font-size: 20px;
-}
-
-a:-webkit-any-link:hover {
-    color: #00008b;
-    text-decoration: none;
-}
-
-a:-webkit-any-link {
-    text-decoration: none;
+h3 {
+    color: #91a6ff;
     font-weight: bold;
+    margin: 0px;
+    text-transform: uppercase;
 }
 
+p {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.award {
+    color: grey;
+}
+
+.language {
+    color: #B90E0A;
+}
+
+a[href] {
+    font-weight: bold;
+    text-decoration: none;
+    color: #1f487e;
+}
+
+a[href]:hover {
+    color: #91a6ff;
+}
+
+h4 {
+    margin-top: 15px;
+    font-size: 1.1em;
+    margin-bottom: 5px;
+    font-weight: normal;
+}
+
+.caption {
+    font-style: italic;
+    font-weight: normal;
+    color: grey;
+}
+
+.timeline {
+    color: grey;
+    text-transform: uppercase;
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+
+.experience-paragraph {
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+
+.parallax {
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  position: relative;
+
+  z-index: -10;
+}
+
+#staff-pay-clip {
+      /* Full height */
+  height: 1200px;
+    background-image: url("clips/staff-pay-clip.jpg");
+    background-size: cover;
+}
+
+#dnd-movie-clip {
+      /* Full height */
+  height: 1200px;
+    background-image: url("clips/dnd-movie-clip.jpg");
+    background-size: cover;
+    background-position: bottom;
+}
+
+#even-split {
+    width: 50%;
+}
+
+.portfolio-clip {
+    width: 90%;
+    height: fit-content; 
+    margin-top: 20px;
+    margin-left: 30px;
+    margin-right: 30px;   
+    margin-bottom: 20px;
+    box-shadow: 0 1px 5px #666;
+}
+
+.portfolio-clip:hover {
+    box-shadow: 0 5px 5px #666;
+}
+
+.portfolio-clip>.content-block>hr {
+    color: black;
+}
 
 </style>
 </head>
 <body>
 
+    <div class="row" style="height: 1200px;">
+        <div class="page-margin"></div>
+        <div class="page">
+            <div class="column" id="page-main">
+                <div class="content-block">
+                    <div class="main-header">
+                        <div class="header-text">
+                            <h1 class="page-title">Declan Bradley</h1>
+                            <p style="font-weight: bold; margin-top: 5px;">Computer science student and journalist at Reed College</p>
 
-<!-- Top Navigation Menu -->
-<div class="topnav">
-  <div id="myLinks">
-    <a href="index.html">Home</a>
-    <a href="dataviz.html">DataViz</a>
-    <a href="rhetoric.html">PathsTest</a>
-    <a href="paper.html">Paper</a>
-    <a href="https://github.com/declanrjb"><i class="fa-brands fa-github"></i></a>
-    <a href="tel:6169149525"><i class="fa-solid fa-phone"></i></a>
-    <a href="mailto:declanrjb@gmail.com"><i class="fa-solid fa-envelope"></i></a>
-  </div>
-</div>
+                            <h3>EXPERIENCE</h3>
+                            <h4><b>The Reed College Quest — </b><a class="caption">Editor</a></h4>
+                            <p class="timeline">DECEMBER 2022 - PRESENT</p>
+                            <h4><b>ReThink Media — </b><a class="caption">Data Science Intern</a></h4>
+                            <p class="timeline">MAY 2023 - JULY 2023</p>
+                            <h4><b>National College Media Conference,</b> Associated Collegiate Press —<a class="caption">Speaker</a></h4>
+                            <p class="timeline">MARCH 2023</p>
+                            <p class="experience-paragraph">I gave three talks at ACP’s 2023 National College Media Conference — including sessions on app development in Swift and R for data journalism.</p>
+                            <h4><b>Reed College mLab — </b><a class="caption">Data Analysis Support Staff</a></h4>
+                            <p class="timeline">JANUARY 2023 - PRESENT</p>
+                            <h4><b>The City Voice — </b><a class="caption">Editor in Chief</a></h4>
+                            <p class="timeline">September 2020 - May 2022</p>
 
-<div style="padding-left:16px">
-    <div class="row">
-        <div class="column" id="column-left">
-            <img src="declan_sanfran.jpeg" alt="Avatar">
+                            <br>
+                            <h3>Education</h3>
+                            <h4><b>Reed College,</b> Portland, OR</h4>
+                            <p class="timeline">AUGUST 2022 - PRESENT</p>
+                            <h4><b>Digital D.C. Workshop,</b> The Washington Post & Associated Collegiate Press</h4>
+                            <p class="timeline">JULY 2022</p>
+                            <p class="experience-paragraph">At ACP’s first ever digital journalism workshop, I worked directly with experts in the field, including Washington Post Engineering Director Jeremy Bowers and New York Times Graphics Editor Larry Buchanan.</p>
+                            <h4><b>Data Visualization Society Mentorship Program</b></h4>
+                            <p class="timeline">JUNE 2023 - PRESENT</p>
+                            <p class="experience-paragraph">During the DVS summer mentorship program, I was mentored by Julia Wolfe, Americas Editor at Reuters and former Data Visualization Editor for FiveThirtyEight.</p>
+                            <h4><b>SPFI College Media Free Press Workshop</b></h4>
+                            <p class="timeline">JUNE 2023</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="column" id="page-sidebar">
+                <div class="content-block">
+                    <br>
+                    <h3>ABOUT ME</h3>
+                    <p>A <a href="https://www.reed.edu/computer-science/">computer science</a> student at <a href="https://www.reed.edu/">Reed College</a>, with experience in Python, HTML, CSS, and R. I'm currently working on several projects available on <a href="https://github.com/declanrjb">GitHub</a>. <a href="DeclanBradley_Resume.pdf">See my resume</a>.</p>
+                    <p>A journalist and editor of the <a href="https://reedquest.org/">Reed College Quest</a>, with an interest in entertainment writing, investigative reporting, and data journalism. <a href="portfolio.html">See my portfolio</a>.</p>
+                    <br>
+                    <h3>SKILLS</h3>
+                    <p><a style="font-weight: bold;">Flourish</a> for Data Visualization</p>
+                    <p><a style="font-weight: bold;">Tableau</a> for Data Visualization</p>
+                    <p><a style="font-weight: bold;">Web Design</a> (CSS, HTML, JS, WordPress, etc)</p>
+                    <p><a style="font-weight: bold;">Web Scraping</a> with Rvest and Selenium, including Javascript-based pages</p>
+                    <br>
+                    <h3>LANGUAGES</h3>
+                    <p><a class="language">English</a>, <a class="language">Spanish</a> (proficient)</p>
+                    <p><a style="font-weight: bold;">General Programming Languages:</a> <a class="language">Python</a>, <a class="language">R</a>, <a class="language">C++</a></p>
+                    <p><a style="font-weight: bold;">Web Languages:</a> <a class="language">HTML</a>, <a class="language">CSS</a>, limited <a class="language">JavaScript</a></p>
+                    <p><a style="font-weight: bold;">Low-Level Languages:</a> <a class="language">C</a>, <a class="language">MIPS</a></p>
+                    <br>                    
+                    <h3>RECOGNITION</h3>
+                    <p><a style="font-weight: bold;">2022 Innovation Pacemaker Award,</a> <br>National Scholastic Press Association</p>
+                    <p><a style="font-weight: bold;">National Merit Scholar,</a> 2022</p>
+                    <p><a style="font-weight: bold;">2nd Place Opinion Writing,</a> <br>Associated Collegiate Press <br><a class="award">Spring Journalistic Writing Awards, 2023</a></p>
+                    <p><a style="font-weight: bold;">Top Ten Best of Show News Website Design,</a> <br>National College Media Conference, Spring 2023</p>
+                    <p><a style="font-weight: bold;">2022 Honory Statewide Student Journalist Staff,</a> <br>Michigan Interscholastic Press Association</p>
+                    <p><a style="font-weight: bold;">First Place Opinion Writing,</a> <br>National Scholastic Press Association <br> <a class="award">Fall Journalistic Writing Awards, 2021</a></p>
+                    <p><a style="font-weight: bold;">1st Place Review Writing,</a>
+                        <br>
+                        <a class="organization">Michigan Interscholastic Press Association</a>
+                        <br>
+                        <a class="award">Annual Journalistic Writing Awards, 2022</a>
+                        <br>
+                        <a class="award">Annual Journalistic Writing Awards, 2021</a>
+                    </p>
+                    <p><a style="font-weight: bold;">Honorable Mention Opinion Writing,</a>
+                        <br>
+                        <a class="organization">National Scholastic Press Association</a>
+                        <br>
+                        <a class="award">Spring Journalistic Writing Awards, 2022</a>
+                    </p>
+                </div>
+            </div>
         </div>
-        <div class="column" id="column-right">
-            <h1>Hi, I'm Declan Bradley. I am...</h1>
-            <p>A <a href="https://www.reed.edu/computer-science/">computer science</a> student at <a href="https://www.reed.edu/">Reed College</a>, with experience in Python, HTML, CSS, and R. I'm currently working on several projects available on <a href="https://github.com/declanrjb">GitHub</a>. <a href="DeclanBradley_Resume.pdf">See my resume</a>.</p>
-            <p>A journalist and editor of the <a href="https://reedquest.org/">Reed College Quest</a>, with an interest in entertainment writing, investigative reporting, and data journalism. <a href="https://declanbradleymipa.wordpress.com/">See my portfolio</a>.</p>
-        </div>
+        <div class="page-margin"></div>
     </div>
-</div>
 
-<script>
-function myFunction() {
-  var x = document.getElementById("myLinks");
-  if (x.style.display === "block") {
-    x.style.display = "none";
-  } else {
-    x.style.display = "block";
-  }
-}
-</script>
+    <div class="parallax" id="staff-pay-clip"></div>
+        
+    <div class="row" style="height: 400px;">
+        <div class="page-margin"></div>
+        <div class="page" style="margin-top: 0px; height: fit-content; position: relative; top: -50px;">
+            <div class="column" id="even-split">
+                <div class="content-block" style="position: relative; top: 80px;">
+                    <p style="font-size: 1.5em; vertical-align: middle;">As an editor of the Reed College Quest, I broke a series of stories on the college's changes to staff compensation that a member of the college's board of trustees called, "[a] really useful example of how data visualization can render complex thing understandable," while current staff praised our coverage as "providing better information about these changes than HR and college administration ever did."</p>
+                </div>
+            </div>
+            <div class="column" id="even-split">
+                <a href="portfolio/staff_pay_explained.html"><div class="portfolio-clip">
+                    <div class="content-block">
+                         <img src="portfolio/images/staffpay_scatter.png" style="width: 100%;">
+                         <h2 style="color: black !important;">Staff Pay Explained: What Would Have Changed, and why Staff and Faculty Objected</h2>
+                         <hr style="color: black;">
+                         <p style="color: black">March 2023 | The Reed College Quest</p>
+                         <hr style="color: black;">
+                    </div>
+                </div></a>
+            </div>
+        </div>
+        <div class="page-margin"></div>
+    </div>
+
+    <div class="parallax" id="dnd-movie-clip"></div>
+
+    <div class="row" style="height: 500px;">
+        <div class="page-margin"></div>
+        <div class="page" style="margin-top: 0px; height: fit-content; position: relative; top: -50px;">
+            <div class="column" id="even-split">
+                <div class="content-block" style="position: relative; top: 140px;">
+                    <p style="font-size: 1.5em; vertical-align: middle;">And as a freshman opinion writer for the same paper, I wrote a review of <a style="font-style: italic;">Dungeons and Dragons: Honor Among Thieves</a> that placed 2nd nationally in the Associated Collegiate Press opinion writing awards — my first time competing at the college level.</p>
+                </div>
+            </div>
+            <div class="column" id="even-split">
+                <a href="portfolio/dnd_review.html"><div class="portfolio-clip">
+                    <div class="content-block">
+                         <img src="portfolio/images/dnd_movie_header.webp" style="width: 100%;">
+                         <h2 style="color: black !important;">Dungeons and Dragons: Honor Among Thieves is a Surprisingly Charming Tale of Found Family</h2>
+                         <hr>
+                         <p style="color: black;">April 2023 | The Reed College Quest</p>
+                         <hr>
+                         <p class="caption">Associated Collegiate Press Nationally Award Winning Story</p>
+                         <hr>
+                    </div>
+                 </div></a>
+            </div>
+        </div>
+        <div class="page-margin"></div>
+    </div>
+
+    </div>
+   
+        
+
+
 
 </body>
 </html>

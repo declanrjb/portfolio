@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Declan Bradley - Portfolio</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="shortcut icon" type="image/x-icon" href="quill.ico">
+<script src="https://kit.fontawesome.com/bb1d08a9b2.js" crossorigin="anonymous"></script>
+<style>
+
+.page-margin {
+    width: 15%;
+    height: 500px;
+    float: left;
+}
+
+.page {
+    width: 70%;
+    height: fit-content;
+    float: left;
+    box-shadow: 0 1px 5px #666;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+    background-color: #FFFFFF;
+}
+
+.column {
+    float: left;
+}
+
+#page-main {
+    width: 60%;
+}
+
+#page-sidebar {
+    width: 40%;
+}
+
+.content-block {
+    padding: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.page-title {
+    font-size: 3.5em;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+.profile-pic {
+    float: left;
+    width: 25%;
+    border-radius: 50%;
+}
+
+.main-header {
+    vertical-align: middle;
+}
+
+.header-text {
+    float: left;
+    position: relative;
+}
+
+h3 {
+    color: #91a6ff;
+    font-weight: bold;
+    margin: 0px;
+    text-transform: uppercase;
+}
+
+p {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.award {
+    color: grey;
+}
+
+.language {
+    color: #B90E0A;
+}
+
+a[href] {
+    text-decoration: none;
+    color: black;
+}
+
+h4 {
+    margin-top: 15px;
+    font-size: 1.1em;
+    margin-bottom: 5px;
+    font-weight: normal;
+}
+
+.caption {
+    font-style: italic;
+    font-weight: normal;
+    color: grey;
+}
+
+.timeline {
+    color: grey;
+    text-transform: uppercase;
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+
+.experience-paragraph {
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+
+.parallax {
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  position: relative;
+
+  z-index: -10;
+}
+
+#staff-pay-clip {
+      /* Full height */
+  height: 1200px;
+    background-image: url("clips/staff-pay-clip.jpg");
+    background-size: cover;
+}
+
+#dnd-movie-clip {
+      /* Full height */
+  height: 1200px;
+    background-image: url("clips/dnd-movie-clip.jpg");
+    background-size: cover;
+    background-position: bottom;
+}
+
+#even-split {
+    width: 50%;
+}
+
+.portfolio-clip {
+    width: 420px;
+    height: fit-content; 
+    margin-top: 20px;
+    margin-left: 30px;
+    margin-right: 30px;   
+    margin-bottom: 20px;
+    box-shadow: 0 1px 5px #666;
+}
+
+.portfolio-clip:hover {
+    box-shadow: 0 5px 5px #666;
+}
+
+.portfolio-grid {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap-reverse;
+}
+
+.menu-grid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.header {
+    margin-left: 30px;
+    margin-right: 25px;
+    margin-top: 20px;
+}
+
+.menu-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: fit-content;
+}
+
+.menu-container {
+    display: block;
+    width: fit-content;
+    position: relative;
+    left: 81%;
+}
+
+.menu-item {
+    margin-right: 10px;
+    font-size: 18px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    color: #000000;
+    font-weight: normal !important;
+}
+
+.menu-item:hover {
+    color: #91a6ff !important;
+}
+
+.menu {
+    width: fit-content;
+}
+
+.social-icons {
+    margin-left: 10px;
+    position: relative;
+    top: 10px;
+}
+
+</style>
+</head>
+<body>
+
+<div class="header">
+    <div class="menu-container">
+        <div class="menu-wrapper">
+            <div class="menu">
+                <h1 style="margin-bottom: 0px; margin-top: 0px;">Declan Bradley</h1>
+                <div class="menu-grid">
+                    <p class="menu-item"><a href="paper.html">Home</a></p>
+                    <p class="menu-item"><a href="portfolio.html">Portfolio</a></p>
+                    <p class="menu-item">About Me</p>
+                </div>
+                <hr style="width: 115%; font-weight: 200; color: black; border-color: black; margin-top: 2px;">
+            </div>
+            <div class="social-icons">
+                <a href="tel:6169149525"><i class="fa-solid fa-phone"></i></a>
+                <br>
+                <a href="mailto:declanrjb@gmail.com"><i class="fa-regular fa-envelope"></i></a>
+                <br>
+                <a href="https://www.linkedin.com/in/declan-bradley-1a7685285/"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="column" style="width: 33%;">
+    <div class="portfolio-grid">
+        <a href="portfolio/dnd_review.html"><div class="portfolio-clip">
+            <div class="content-block">
+                 <img src="portfolio/images/dnd_movie_header.webp" style="width: 100%;">
+                 <h2 style="color: black !important;">Dungeons and Dragons: Honor Among Thieves is a Surprisingly Charming Tale of Found Family</h2>
+                 <hr>
+                 <p style="color: black;">April 2023 | The Reed College Quest</p>
+                 <hr>
+                 <p class="caption">Associated Collegiate Press Nationally Award Winning Story</p>
+                 <hr>
+            </div>
+         </div></a>
+        <a href="portfolio/staff_pay_explained.html"><div class="portfolio-clip">
+            <div class="content-block">
+                 <img src="portfolio/images/staffpay_scatter.png" style="width: 100%;">
+                 <h2 style="color: black !important;">Staff Pay Explained: What Would Have Changed, and why Staff and Faculty Objected</h2>
+                 <hr>
+                 <p style="color: black">March 2023 | The Reed College Quest</p>
+                 <hr>
+            </div>
+        </div></a>
+    </div>
+</div>
+<div class="column" style="width: 33%;">
+    <div class="portfolio-grid">
+        <a href="portfolio/dune_review.html"><div class="portfolio-clip">
+            <div class="content-block">
+                 <img src="portfolio/images/dune_header.jpg" style="width: 100%;">
+                 <h2 style="color: black !important;">Dune Review: Only the Beginning</h2>
+                 <hr>
+                 <p style="color: black;">November 2021 | The City Voice</p>
+                 <hr>
+                 <p class="caption">1st in the Nation for Opinion Writing, National Scholastic Press Association</p>
+                 <hr>
+            </div>
+        </div></a>
+        <a href="portfolio/expanse_s5_review.html"><div class="portfolio-clip">
+            <div class="content-block">
+                 <img src="portfolio/images/expanse_s5_header.jpg" style="width: 100%;">
+                 <h2 style="color: black !important;">The Expanse Season 5 Review</h2>
+                 <hr>
+                 <p style="color: black;">February 2021 | The City Voice</p>
+                 <hr>
+                <p class="caption">1st in the State for Review Writing, Michigan Interscholastic Press Association</p>
+                <hr>
+            </div>
+        </div></a>
+        <div class="portfolio-clip">
+            <div class="content-block">
+                <div class="flourish-embed flourish-scatter" data-src="visualisation/14446668"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="column" style="width: 33%;">
+    <div class="portfolio-grid">
+        <a href="portfolio/expanse_s6_review.html"><div class="portfolio-clip">
+            <div class="content-block">
+                 <img src="portfolio/images/expanse_s6_header.webp" style="width: 100%;">
+                 <h2 style="color: black !important;">The Expanse Season 6 Review: Reason to Hope</h2>
+                 <hr>
+                 <p>January 2022 | The City Voice</p>
+                 <hr>
+                 <p class="caption">1st in the State for Review Writing, Michigan Interscholastic Press Association</p>
+                 <hr>
+            </div>
+        </div></a>
+        <div class="portfolio-clip">
+            <div class="content-block">
+                <div class="flourish-embed flourish-chart" data-src="visualisation/13359117" data-height="500px"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
