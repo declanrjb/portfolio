@@ -29,6 +29,7 @@ function createStraightLine(source, target){
 
 function getPointPos(point){
   var pos = point.getBoundingClientRect();
+  pos.middle = pos.top + (point.clientHeight/2);
   return pos;
 }
 
