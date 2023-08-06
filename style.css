@@ -133,10 +133,12 @@ path:hover {
 
 .middle-path {
   position: absolute;
+  transform: translate(-50px,-66px);
 }
 
 .right-path {
   position: absolute;
+  transform: translate(-50px,-66px);
 }
 
 .section-header {
