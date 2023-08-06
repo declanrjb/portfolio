@@ -11,12 +11,14 @@ path {
   stroke: #000000;
   stroke-dasharray: 0px;
   stroke-width: 3px;
+  z-index: -990;
 }
 
 path:hover {
   fill: transparent;
   stroke-dasharray: 0px;
   stroke-width: 5px;
+  display: none;
 }
 
 .connector-path:hover {
