@@ -128,6 +128,7 @@ path:hover {
 
 .connector-path {
   position: absolute;
+  transform: translate(-50px,-66px);
 }
 
 .middle-path {
