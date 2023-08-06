@@ -29,9 +29,9 @@ function createStraightLine(source, target){
 
 function getPointPos(point){
   var pos = $(point).position();
-  pos.right = pos.left + point.clientWidth;
-  pos.bottom = pos.top + point.clientHeight;
-  pos.middle = pos.top + point.clientHeight/2;
+  pos.right = pos.left;
+  pos.bottom = pos.top;
+  pos.middle = pos.top;
   return pos;
 }
 
