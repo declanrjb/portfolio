@@ -1,9 +1,9 @@
-svg {
-  width: 300px;
+#full-background-svg {
   height: 450px;
-  background-color: transparent;
-  position: relative;
-  left: -50px;
+  width: 1205px;
+  background-color: lightgrey;
+  position: absolute;
+  z-index: -999;
 }
 
 path {
@@ -112,6 +112,11 @@ path:hover {
   float: left;
   width: fit-content;
   height: 100%;
+}
+
+.row {
+  width: fit-content;
+  height: fit-content;
 }
 
 /* Clear floats after the columns */
