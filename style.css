@@ -128,17 +128,14 @@ path:hover {
 
 .connector-path {
   position: absolute;
-  transform: translate(-125px, -70px);
 }
 
 .middle-path {
   position: absolute;
-  transform: translate(-500px, -70px);
 }
 
 .right-path {
   position: absolute;
-  transform: translate(-870px, -70px);
 }
 
 .section-header {
