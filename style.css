@@ -30,6 +30,12 @@ path:hover {
   stroke: red;
 }
 
+.economy:hover ~ .economy {
+  stroke-dasharray: 0px;
+  stroke-width: 5px;
+  stroke: blue;
+}
+
 /* begin page style */
 
 .dot {
