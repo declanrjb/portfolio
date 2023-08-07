@@ -34,6 +34,7 @@ path:hover {
   stroke-dasharray: 0px;
   stroke-width: 5px;
   stroke: blue;
+  box-shadow: 0 1px 5px #666;
 }
 
 /* begin page style */
