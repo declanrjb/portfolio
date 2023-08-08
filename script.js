@@ -203,27 +203,112 @@ drawLine(rep_immigration_endpoint,trump_immigration,rep_immigration_line);
 drawPath(rep_terrorism_endpoint,trump_terrorism,rep_terrorism_line);
 drawLine(rep_inequality_endpoint,trump_inequality,rep_inequality_line);
 
-var elms = document.getElementsByClassName("economy");
-var n = elms.length;
-function changeColor(color) {
-    for(var i = 0; i < n; i ++) {
-        elms[i].style.borderColor = color;
-        elms[i].style.stroke = color;
+function hoverByClass(classname,colorover,colorout="black"){
+  var elms=document.getElementsByClassName(classname);
+  for(var i=0;i<elms.length;i++){
+      elms[i].onmouseover = function(){
+          for(var k=0;k<elms.length;k++){
+              elms[k].style.borderColor = colorover;
+              elms[k].style.stroke = colorover;
+              elms[k].style.strokeWidth = 5;
 
-        var children = elms[i].querySelectorAll('.dot');
-        console.log(children)
-        if (children.length > 0) {
-          children[0].backgroundColor = color;
-        }
+              var children = elms[k].querySelectorAll(".dot");
+              if (children.length > 0) {
+                for (var j=0; j < children.length; j++) {
+                  children[j].style.backgroundColor = colorover;
+                  children[j].style.borderColor = colorover;
+                }
+              }
+          }
+      };
+      elms[i].onmouseout = function(){
+          for(var k=0;k<elms.length;k++){
+              elms[k].style.stroke = colorout;
+              elms[k].style.borderColor = colorout;
+              elms[k].style.strokeWidth = 3;
+
+              var children = elms[k].querySelectorAll(".dot");
+
+              if (children.length > 0) {
+                for (var j=0; j < children.length; j++) {
+                  children[j].style.backgroundColor = colorout;
+                  children[j].style.borderColor = colorout;
+                }
+              }
+          }
+      };
+  }
+  }
+
+  function onlyUnique(value, index, array) {
+    return array.indexOf(value) === index;
+  }
+
+  function oneOfList(ls1,ls2) {
+    result = [];
+    full_list = ls1.concat(ls2);
+    full_list = full_list.filter(onlyUnique);
+    for (var i=0; i < full_list.length; i++) {
+      curr = full_list[i];
+      if (!(ls1.includes(curr) && ls2.includes(curr))) {
+        result.push(curr);
+      }
     }
-}
-for(var i = 0; i < n; i ++) {
-    elms[i].onmouseover = function() {
-        changeColor("blue");
-    };
-    elms[i].onmouseout = function() {
-        changeColor("black");
-    };
-}
+    return(result);
+  }
+
+  function antiHoverByClass(classname,colorover,colorout="black"){
+    var elms=document.getElementsByClassName(classname);
+    var anti_selector = ".issue";
+    anti_selector = anti_selector.concat(":not(.",classname,")");
+    var all_elms = document.querySelectorAll(anti_selector);
+    for(var i=0;i<elms.length;i++){
+        elms[i].onmouseover = function(){
+            for(var k=0;k<all_elms.length;k++){
+                all_elms[k].style.borderColor = colorover;
+                all_elms[k].style.stroke = colorover;
+  
+                var children = all_elms[k].querySelectorAll(".dot");
+                if (children.length > 0) {
+                  for (var j=0; j < children.length; j++) {
+                    children[j].style.backgroundColor = colorover;
+                    children[j].style.borderColor = colorover;
+                  }
+                }
+            }
+        };
+        elms[i].onmouseout = function(){
+            for(var k=0;k<all_elms.length;k++){
+                all_elms[k].style.stroke = colorout;
+                all_elms[k].style.borderColor = colorout;
+  
+                var children = all_elms[k].querySelectorAll(".dot");
+  
+                if (children.length > 0) {
+                  for (var j=0; j < children.length; j++) {
+                    children[j].style.backgroundColor = colorout;
+                    children[j].style.borderColor = colorout;
+                  }
+                }
+            }
+        };
+    }
+    }
+
+  antiHoverByClass("economy","lightgrey");
+  antiHoverByClass("healthcare","lightgrey");
+  antiHoverByClass("war","lightgrey");
+  antiHoverByClass("environment","lightgrey");
+  antiHoverByClass("inequality","lightgrey");
+  antiHoverByClass("crime","lightgrey");
+  antiHoverByClass("morality","lightgrey");
+  antiHoverByClass("abortion","lightgrey");
+  antiHoverByClass("immigration","lightgrey");
+  antiHoverByClass("terrorism","lightgrey");
+
+
+
+
+
 
 
