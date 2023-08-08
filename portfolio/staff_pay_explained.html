@@ -9,13 +9,13 @@
 <style>
 
 .page-margin {
-    width: 15%;
+    width: 17.5%;
     height: 500px;
     float: left;
 }
 
 .page {
-    width: 70%;
+    width: 65%;
     height: fit-content;
     float: left;
     box-shadow: 0 1px 5px #666;
@@ -130,6 +130,49 @@ img {
     width: 100%;
 }
 
+.menu-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: fit-content;
+}
+
+.menu-container {
+    display: block;
+    width: fit-content;
+    position: relative;
+    margin-top: 25px;
+    float: right;
+    margin-right: 15px;
+}
+
+.menu-item {
+    margin-right: 10px;
+    font-size: 15px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    color: #000000;
+    font-weight: normal !important;
+}
+
+.menu-item:hover {
+    color: #91a6ff !important;
+}
+
+.menu {
+    width: fit-content;
+}
+
+.social-icons {
+    position: relative;
+}
+
+.menu-grid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
 </style>
 </head>
 <body>
@@ -160,9 +203,9 @@ img {
                     <p>However, under the proposed new system, multiple positions could be lumped into a single “Pay Grade”, giving them a shared pay range of maximum and minimum pay. Note that this would increase the minimum pay for some positions, but decrease the maximum for others, although HR has assured staff that there will be no reductions in current salaries, even if a staff member’s current pay would have exceeded their new maximum pay.</p>
                     <p>This means that, under the proposed system, compensation for some positions would have been capped below current levels, while others would have had their ranges extended. Seen above, the Quest calculated aggregate data on changes to minimum and maximum pay for employees in each new pay grade, and found that a majority of employees (roughly 103 of the 183 positions listed in HR documents) would have been affected by decreases to their maximum pay caused by being sorted into newly created pay grades 4, 5, and 6. Pay Grade 3’s maximum pay would have declined the most, while Pay Grades 7, 8, 9, and 10 would have seen their maximum pay increase.</p>
                     <div class="flourish-embed flourish-scatter" data-src="visualisation/13243933"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
-                    <p>Above, we provide a more granular view of the data broken down to the level of individual positions. Note that the median for overall changes in both maximum and minimum pay appears at first to hover near or above zero, but the decreases in pay pulling the 1st quartile below zero fall disproportionately on lower pay grades like 4, 5, and 6.</p>
                 </div>
                 <div class="column">
+                    <p>Above, we provide a more granular view of the data broken down to the level of individual positions. Note that the median for overall changes in both maximum and minimum pay appears at first to hover near or above zero, but the decreases in pay pulling the 1st quartile below zero fall disproportionately on lower pay grades like 4, 5, and 6.</p>
                     <p>Between them, the salaried staff members sorted into pay grades 4, 5, and 6 stand to lose more than $37,690 in collective annual earning potential. This statistic does not include the hourly employees in this or other grades, who are not depicted in the above charts due to scale constraints and the difficulty of projecting their earnings onto an annual metric.</p>
                     <p>Meanwhile, compensation ranges for the upper-level grades in the proposed pay-scale system remain high. While the HR department likely did not intend to release this data, the “Hidden” tables contained in the file packages published on the HR website provide data on Pay Grades 11 and up, including what appears to be the highest grade, Grade 17, at $309,100 to $494,600 a year.</p>
                     <div class="flourish-embed flourish-scatter" data-src="visualisation/13234550"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
@@ -177,5 +220,26 @@ img {
             </div>
             
         </div>
-        <div class="page-margin"></div>
+        <div class="page-margin">
+            <div class="menu-container">
+                <div class="menu-wrapper">
+                    <div class="menu">
+                        <h1 style="margin-bottom: 0px; margin-top: 0px; font-size: 1.75em;">Declan Bradley</h1>
+                        <div class="menu-grid">
+                            <p class="menu-item"><a href="paper.html">Home</a></p>
+                            <p class="menu-item"><a href="portfolio.html">Portfolio</a></p>
+                            <p class="menu-item">About Me</p>
+                        </div>
+                        <hr style="width: 108%; font-weight: 200; color: black; border-color: black; margin-top: 2px;">
+                    </div>
+                    <div class="social-icons">
+                        <a href="tel:6169149525"><i class="fa-solid fa-phone"></i></a>
+                        <br>
+                        <a href="mailto:declanrjb@gmail.com"><i class="fa-regular fa-envelope"></i></a>
+                        <br>
+                        <a href="https://www.linkedin.com/in/declan-bradley-1a7685285/"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
