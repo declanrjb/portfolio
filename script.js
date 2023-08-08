@@ -207,13 +207,19 @@ var elms = document.getElementsByClassName("economy");
 var n = elms.length;
 function changeColor(color) {
     for(var i = 0; i < n; i ++) {
-        elms[i].style.backgroundColor = color;
+        elms[i].style.borderColor = color;
         elms[i].style.stroke = color;
+
+        var children = elms[i].querySelectorAll('.dot');
+        console.log(children)
+        if (children.length > 0) {
+          children[0].backgroundColor = color;
+        }
     }
 }
 for(var i = 0; i < n; i ++) {
     elms[i].onmouseover = function() {
-        changeColor("yellow");
+        changeColor("blue");
     };
     elms[i].onmouseout = function() {
         changeColor("black");

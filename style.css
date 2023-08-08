@@ -1,5 +1,5 @@
 #full-background-svg {
-  height: 450px;
+  height: 500px;
   width: 1205px;
   background-color: transparent;
   position: absolute;
@@ -35,27 +35,26 @@ path:hover {
 .dot {
   height: 25px;
   width: 25px;
-  background-color: #ffffff;
+  background-color: black;
   border-style: solid;
   border-width: 2px;
   border-radius: 50%;
   display: inline-block;
-  margin-bottom: 10px;
   position: relative;
   z-index: 1000;
 }
 
 .endpoint {
-  height: 15px;
-  width: 15px;
-  background-color: #ffffff;
+  height: 25px;
+  width: 1px;
+  background-color: transparent;
   border-style: solid;
   border-width: 2px;
   border-radius: 50%;
   display: inline-block;
   vertical-align: middle;
   margin-right: 5px;
-  border-color: grey;
+  border-color: transparent;
   position: relative;
   z-index: 1000;
 }
@@ -63,11 +62,13 @@ path:hover {
 .dot-number {
     position: relative;
     top: 4px;
+    color: #ffffff;
 }
 
 .dot-ten {
     position: relative;
     top: 4px;
+    color: #ffffff;
 }
 
 .stack-right .dot-number {
@@ -89,6 +90,8 @@ path:hover {
 .issue-label {
     margin-right: 5px;
     vertical-align: middle;
+    position: relative;
+    top: 2px;
 }
 
 .stack-left {
@@ -103,8 +106,16 @@ path:hover {
     text-align: right;
 }
 
+.stack-right > .issue-entry > .endpoint {
+  float: left;
+}
+
 .stack-left > .issue-entry {
     text-align: left;
+}
+
+.stack-left > .issue-entry > .endpoint {
+  float: right;
 }
 
 .column {
@@ -154,7 +165,7 @@ path:hover {
 }
 
 .viz-wrapper {
-  width: 1205px;
+  width: 1250px;
   padding-left: 50px;
 }
 
@@ -279,4 +290,17 @@ path:hover {
 .issue-entry {
   z-index: 100;
   position: relative;
+  margin-bottom: 10px;
+  border-style: solid;
+  border-radius: 500px;
+  background-color: white;
+  border-width: 2px;
+}
+
+#stack-right-blunt > .issue-entry > .issue-label {
+  margin-left: 10px;
+}
+
+#stack-left-blunt > .issue-entry > .issue-label {
+  margin-right: 10px;
 }
