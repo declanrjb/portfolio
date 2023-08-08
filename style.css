@@ -30,76 +30,6 @@ path:hover {
   stroke: red;
 }
 
-.economy:hover ~ .economy {
-  stroke-dasharray: 0px;
-  stroke-width: 5px;
-  stroke: blue;
-  box-shadow: 0 1px 5px #666;
-}
-
-.healthcare:hover ~ .healthcare {
-  stroke-dasharray: 0px;
-  stroke-width: 5px;
-  stroke: blue;
-  box-shadow: 0 1px 5px #666;
-}
-
-.war:hover ~ .war {
-  stroke-dasharray: 0px;
-  stroke-width: 5px;
-  stroke: blue;
-  box-shadow: 0 1px 5px #666;
-}
-
-.environment:hover ~ .environment {
-  stroke-dasharray: 0px;
-  stroke-width: 5px;
-  stroke: blue;
-  box-shadow: 0 1px 5px #666;
-}
-
-.inequality:hover ~ .inequality {
-  stroke-dasharray: 0px;
-  stroke-width: 5px;
-  stroke: blue;
-  box-shadow: 0 1px 5px #666;
-}
-
-.crime:hover ~ .crime {
-  stroke-dasharray: 0px;
-  stroke-width: 5px;
-  stroke: blue;
-  box-shadow: 0 1px 5px #666;
-}
-
-.morality:hover ~ .morality {
-  stroke-dasharray: 0px;
-  stroke-width: 5px;
-  stroke: blue;
-  box-shadow: 0 1px 5px #666;
-}
-
-.abortion:hover ~ .abortion {
-  stroke-dasharray: 0px;
-  stroke-width: 5px;
-  stroke: blue;
-  box-shadow: 0 1px 5px #666;
-}
-
-.immigration:hover ~ .immigration {
-  stroke-dasharray: 0px;
-  stroke-width: 5px;
-  stroke: blue;
-  box-shadow: 0 1px 5px #666;
-}
-
-.terrorism:hover ~ .terrorism {
-  stroke-dasharray: 0px;
-  stroke-width: 5px;
-  stroke: blue;
-  box-shadow: 0 1px 5px #666;
-}
-
 /* begin page style */
 
 .dot {
@@ -258,6 +188,7 @@ path:hover {
 
 #svg-column {
   width: 200px;
+  height: 1px;
 }
 
 .link {
@@ -268,4 +199,84 @@ path:hover {
 
 .link:hover {
   color: black;
+}
+
+/* multi highlighting */
+
+/*
+.economy:hover ~ .economy {
+  stroke-dasharray: 0px;
+  stroke-width: 5px;
+  stroke: blue;
+  box-shadow: 0 1px 5px #666;
+}
+
+.healthcare:hover ~ .healthcare {
+  stroke-dasharray: 0px;
+  stroke-width: 5px;
+  stroke: blue;
+  box-shadow: 0 1px 5px #666;
+}
+
+.war:hover ~ .war {
+  stroke-dasharray: 0px;
+  stroke-width: 5px;
+  stroke: blue;
+  box-shadow: 0 1px 5px #666;
+}
+
+.environment:hover ~ .environment {
+  stroke-dasharray: 0px;
+  stroke-width: 5px;
+  stroke: blue;
+  box-shadow: 0 1px 5px #666;
+}
+
+.inequality:hover ~ .inequality {
+  stroke-dasharray: 0px;
+  stroke-width: 5px;
+  stroke: blue;
+  box-shadow: 0 1px 5px #666;
+}
+
+.crime:hover ~ .crime {
+  stroke-dasharray: 0px;
+  stroke-width: 5px;
+  stroke: blue;
+  box-shadow: 0 1px 5px #666;
+}
+
+.morality:hover ~ .morality {
+  stroke-dasharray: 0px;
+  stroke-width: 5px;
+  stroke: blue;
+  box-shadow: 0 1px 5px #666;
+}
+
+.abortion:hover ~ .abortion {
+  stroke-dasharray: 0px;
+  stroke-width: 5px;
+  stroke: blue;
+  box-shadow: 0 1px 5px #666;
+}
+
+.immigration:hover ~ .immigration {
+  stroke-dasharray: 0px;
+  stroke-width: 5px;
+  stroke: blue;
+  box-shadow: 0 1px 5px #666;
+}
+
+.terrorism:hover ~ .terrorism {
+  stroke-dasharray: 0px;
+  stroke-width: 5px;
+  stroke: blue;
+  box-shadow: 0 1px 5px #666;
+}
+
+*/
+
+.issue-entry {
+  z-index: 100;
+  position: relative;
 }

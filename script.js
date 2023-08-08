@@ -203,4 +203,21 @@ drawLine(rep_immigration_endpoint,trump_immigration,rep_immigration_line);
 drawPath(rep_terrorism_endpoint,trump_terrorism,rep_terrorism_line);
 drawLine(rep_inequality_endpoint,trump_inequality,rep_inequality_line);
 
+var elms = document.getElementsByClassName("economy");
+var n = elms.length;
+function changeColor(color) {
+    for(var i = 0; i < n; i ++) {
+        elms[i].style.backgroundColor = color;
+        elms[i].style.stroke = color;
+    }
+}
+for(var i = 0; i < n; i ++) {
+    elms[i].onmouseover = function() {
+        changeColor("yellow");
+    };
+    elms[i].onmouseout = function() {
+        changeColor("black");
+    };
+}
+
 
