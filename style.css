@@ -71,10 +71,13 @@ path {
 }
 
 .issue-label {
-    margin-right: 5px;
     vertical-align: middle;
     position: relative;
     top: 2px;
+}
+
+#stack-right-blunt > .issue-entry > .issue-label {
+  margin-right: 5px;
 }
 
 .stack-left {
