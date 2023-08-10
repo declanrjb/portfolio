@@ -237,14 +237,14 @@ drawPath(democrat_education_dot,rep_education_dot,voters_education_line);
 drawPath(rep_economy_endpoint,trump_economy,rep_economy_line);
 drawPath(rep_healthcare_endpoint,trump_healthcare,rep_healthcare_line);
 drawPath(rep_war_endpoint,trump_war,rep_war_line,1.9,2);
-drawPath(rep_environment_endpoint,trump_environment,rep_environment_line);
+drawPath(rep_environment_endpoint,trump_environment,rep_environment_line,1.9,2);
 drawPath(rep_crime_endpoint,trump_crime,rep_crime_line);
 drawPath(rep_morality_endpoint,trump_morality,rep_morality_line,2.1,2);
 drawPath(rep_abortion_endpoint,trump_abortion,rep_abortion_line);
 drawPath(rep_immigration_endpoint,trump_immigration,rep_immigration_line);
-drawPath(rep_terrorism_endpoint,trump_terrorism,rep_terrorism_line);
-drawPath(rep_inequality_endpoint,trump_inequality,rep_inequality_line);
-drawPath(rep_public_health_endpoint,trump_public_health,rep_public_health_line);
+drawPath(rep_terrorism_endpoint,trump_terrorism,rep_terrorism_line,2.1,2);
+drawPath(rep_inequality_endpoint,trump_inequality,rep_inequality_line,1.95,2);
+drawPath(rep_public_health_endpoint,trump_public_health,rep_public_health_line,2.05,2.1);
 drawPath(rep_energy_endpoint,trump_energy,rep_energy_line);
 drawPath(rep_education_endpoint,trump_education,rep_education_line);
 
