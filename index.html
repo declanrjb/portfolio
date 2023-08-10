@@ -47,6 +47,7 @@
     font-size: 3.5em;
     margin-bottom: 0px;
     margin-top: 0px;
+    width: fit-content;
 }
 
 .profile-pic {
@@ -167,45 +168,98 @@ h4 {
     color: black;
 }
 
+.menu-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: fit-content;
+}
+
+.menu-container {
+    display: block;
+    width: fit-content;
+    position: relative;
+    margin-top: 10px;
+}
+
+.menu-item {
+    margin-right: 10px;
+    font-size: 1.1em;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    color: #000000;
+    font-weight: normal !important;
+}
+
+.menu-item:hover {
+    color: #91a6ff !important;
+}
+
+.menu {
+    width: fit-content;
+}
+
+.social-icons {
+    position: relative;
+}
+
+.menu-grid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.title-and-menu {
+    width: fit-content;
+}
+
 </style>
 </head>
 <body>
 
-    <div class="row" style="height: 1200px;">
+    <div class="row" style="height: 950px;">
         <div class="page-margin"></div>
         <div class="page">
             <div class="column" id="page-main">
                 <div class="content-block">
                     <div class="main-header">
                         <div class="header-text">
-                            <h1 class="page-title">Declan Bradley</h1>
-                            <p style="font-weight: bold; margin-top: 5px;">Computer science student and journalist at Reed College</p>
-
-                            <h3>EXPERIENCE</h3>
-                            <h4><b>The Reed College Quest — </b><a class="caption">Editor</a></h4>
-                            <p class="timeline">DECEMBER 2022 - PRESENT</p>
-                            <h4><b>ReThink Media — </b><a class="caption">Data Science Intern</a></h4>
-                            <p class="timeline">MAY 2023 - JULY 2023</p>
-                            <h4><b>National College Media Conference,</b> Associated Collegiate Press —<a class="caption">Speaker</a></h4>
-                            <p class="timeline">MARCH 2023</p>
-                            <p class="experience-paragraph">I gave three talks at ACP’s 2023 National College Media Conference — including sessions on app development in Swift and R for data journalism.</p>
-                            <h4><b>Reed College mLab — </b><a class="caption">Data Analysis Support Staff</a></h4>
-                            <p class="timeline">JANUARY 2023 - PRESENT</p>
-                            <h4><b>The City Voice — </b><a class="caption">Editor in Chief</a></h4>
-                            <p class="timeline">September 2020 - May 2022</p>
-
+                            <div class="title-and-menu">
+                                <h1 class="page-title">Declan Bradley</h1>
+                                <hr style="width: 100%; font-weight: 200; color: black; border-color: black; margin-top: 2px;">
+                                <div class="menu">
+                                    <div class="menu-grid">
+                                        <p class="menu-item"><a href="../index.html">About Me</a></p>
+                                        <p class="menu-item"><a href="../portfolio.html">Portfolio</a></p>
+                                        <p class="menu-item" style="color: black;"><b>|</b></p>
+                                        <p class="menu-item"><a href="tel:6169149525"><i class="fa-solid fa-phone"></i></a></p>
+                                        <p class="menu-item"><a href="mailto:declanrjb@gmail.com"><i class="fa-regular fa-envelope"></i></a></p>
+                                        <p class="menu-item"><a href="https://www.linkedin.com/in/declan-bradley-1a7685285/"><i class="fa-brands fa-linkedin"></i></a></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <p>Programmer, writer, and aspiring data journalist, I'm entering my second year as a computer science student at <a href="https://www.reed.edu/">Reed College</a> excited to pursue new stories and new approaches to journalism. My experience includes four years at my high school paper, the current editorship of my college paper, the <a href="https://reedquest.org/"><i>Reed Quest</i></a>, and a summer mentorship with Reuters graphics editor Julia Wolfe. My writing has been nationally recognized by both the <a href="https://studentpress.org/nspa/">National Scholastic Press Association</a> and the <a href="https://studentpress.org/acp/">Associated Collegiate Press</a>.</p>
+                            <h3>About Me</h3>
+                            <div class="quote-block">
+                                <hr>
+                                <row>
+                                    <div class="column" style="width: 20%;">
+                                        <i class="fa-solid fa-quote-left" style="color: #d3d3d3; font-size: 6em;"></i>
+                                    </div>
+                                    <div class="column" style="width: 80%;">
+                                        <p style="color: grey;">There's a point, around age twenty, when you have to choose whether to be like everybody else the rest of your life, or to make a virtue of your peculiarities.</p>
+                                        <p style="color: grey;">Those who build walls are their own prisoners. ... I'm going to go unbuild walls.”</p>
+                                        <p style="color: grey; font-style: italic;">— Ursula K. Le Guin, The Dispossessed</p>
+                                    </div>
+                                </row>
+                                <hr>
+                            </div>
+                            <p>In Ursula Le Guin's 1974 novel <i>The Dispossessed</i>, the protagonist Shevek struggles to understand his place as he's torn between two worlds. It's a story I've identified with ever since I first read the book in highschool. As a computer scientist with skill in mathematics and data science, I saw no clear way to pursue a love of writing. And as a writer and passionate student journalist, I struggled to see the value of my skills in computer science.</p>
+                            <p>When I first learned about the field of data journalism, however, I felt an instant sense of connection. As an editor of my college paper, the Quest, I've made it my mission to "unbuild walls" in journalism, leading a series of investigative stories driven by data.</p>
+                            <p class="experience-paragraph">In the summer of 2022, I drove to D.C. to attend the Associated Collegiate Press's first ever digital journalism workshop, where I worked directly with experts in the field, including Washington Post Engineering Director Jeremy Bowers and New York Times Graphics Editor Larry Buchanan, on a project of my own design.</p>
+                            <p>In spring 2023, I obtained a grant to attend ACP's spring college journalism conference in San Francisco, where I was accepted to give talks on both mobile app design and webscraping for data journalism.</p>
+                            <p class="experience-paragraph">And during the summer of 2023, I enrolled in the Data Visualization Society mentorship program, where I was lucky enough to be mentored by Reuters graphics editor Julia Wolfe. Under Julia's expert mentorship, I improved my design skills in data visualization and developed a Javascript-based web visualization from scratch.</p>
                             <br>
-                            <h3>Education</h3>
-                            <h4><b>Reed College,</b> Portland, OR</h4>
-                            <p class="timeline">AUGUST 2022 - PRESENT</p>
-                            <h4><b>Digital D.C. Workshop,</b> The Washington Post & Associated Collegiate Press</h4>
-                            <p class="timeline">JULY 2022</p>
-                            <p class="experience-paragraph">At ACP’s first ever digital journalism workshop, I worked directly with experts in the field, including Washington Post Engineering Director Jeremy Bowers and New York Times Graphics Editor Larry Buchanan.</p>
-                            <h4><b>Data Visualization Society Mentorship Program</b></h4>
-                            <p class="timeline">JUNE 2023 - PRESENT</p>
-                            <p class="experience-paragraph">During the DVS summer mentorship program, I was mentored by Julia Wolfe, Americas Editor at Reuters and former Data Visualization Editor for FiveThirtyEight.</p>
-                            <h4><b>SPFI College Media Free Press Workshop</b></h4>
-                            <p class="timeline">JUNE 2023</p>
                         </div>
                     </div>
                 </div>
@@ -213,22 +267,18 @@ h4 {
             <div class="column" id="page-sidebar">
                 <div class="content-block">
                     <br>
-                    <h3>ABOUT ME</h3>
-                    <p>A <a href="https://www.reed.edu/computer-science/">computer science</a> student at <a href="https://www.reed.edu/">Reed College</a>, with experience in Python, HTML, CSS, and R. I'm currently working on several projects available on <a href="https://github.com/declanrjb">GitHub</a>. <a href="DeclanBradley_Resume.pdf">See my resume</a>.</p>
-                    <p>A journalist and editor of the <a href="https://reedquest.org/">Reed College Quest</a>, with an interest in entertainment writing, investigative reporting, and data journalism. <a href="portfolio.html">See my portfolio</a>.</p>
+                    <h3>EXPERIENCE</h3>
+                    <h4><b>The Reed College Quest — </b><a class="caption">Editor</a></h4>
+                    <p class="timeline">DECEMBER 2022 - PRESENT</p>
+                    <h4><b>ReThink Media — </b><a class="caption">Data Science Intern</a></h4>
+                    <p class="timeline">MAY 2023 - JULY 2023</p>
+                    <h4><b>National College Media Conference,</b> Associated Collegiate Press —<a class="caption">Speaker</a></h4>
+                    <p class="timeline">MARCH 2023</p>
+                    <h4><b>Digital D.C. Workshop,</b> The Washington Post & Associated Collegiate Press</h4>
+                    <p class="timeline">JULY 2022</p>
+                    <h4><b>Data Visualization Society Mentorship Program</b></h4>
+                    <p class="timeline">JUNE 2023 - PRESENT</p>
                     <br>
-                    <h3>SKILLS</h3>
-                    <p><a style="font-weight: bold;">Flourish</a> for Data Visualization</p>
-                    <p><a style="font-weight: bold;">Tableau</a> for Data Visualization</p>
-                    <p><a style="font-weight: bold;">Web Design</a> (CSS, HTML, JS, WordPress, etc)</p>
-                    <p><a style="font-weight: bold;">Web Scraping</a> with Rvest and Selenium, including Javascript-based pages</p>
-                    <br>
-                    <h3>LANGUAGES</h3>
-                    <p><a class="language">English</a>, <a class="language">Spanish</a> (proficient)</p>
-                    <p><a style="font-weight: bold;">General Programming Languages:</a> <a class="language">Python</a>, <a class="language">R</a>, <a class="language">C++</a></p>
-                    <p><a style="font-weight: bold;">Web Languages:</a> <a class="language">HTML</a>, <a class="language">CSS</a>, limited <a class="language">JavaScript</a></p>
-                    <p><a style="font-weight: bold;">Low-Level Languages:</a> <a class="language">C</a>, <a class="language">MIPS</a></p>
-                    <br>                    
                     <h3>RECOGNITION</h3>
                     <p><a style="font-weight: bold;">2022 Innovation Pacemaker Award,</a> <br>National Scholastic Press Association</p>
                     <p><a style="font-weight: bold;">National Merit Scholar,</a> 2022</p>
@@ -249,7 +299,7 @@ h4 {
                         <a class="organization">National Scholastic Press Association</a>
                         <br>
                         <a class="award">Spring Journalistic Writing Awards, 2022</a>
-                    </p>
+                    </p>          
                 </div>
             </div>
         </div>
