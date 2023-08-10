@@ -16,8 +16,6 @@
 
 <div class="viz-wrapper">
 <div class="row">
-    <p class="headline">When it comes to policy priorities, voters disagree more with their candidates than they do with each other.</p>
-    <hr>
     <svg id="full-background-svg">
         <path class="connector-path issue economy" id="dem-economy-line"></path>
         <path class="connector-path issue healthcare" id="dem-healthcare-line"></path>
@@ -29,6 +27,9 @@
         <path class="connector-path issue abortion" id="dem-abortion-line"></path>
         <path class="connector-path issue immigration" id="dem-immigration-line"></path>
         <path class="connector-path issue terrorism" id="dem-terrorism-line"></path>
+        <path class="connector-path issue public-health" id="dem-public-health-line"></path>
+        <path class="connector-path issue energy" id="dem-energy-line"></path>
+        <path class="connector-path issue education" id="dem-education-line"></path>
 
         <path class="middle-path issue economy" id="voters-economy-line"></path>
         <path class="middle-path issue healthcare" id="voters-healthcare-line"></path>
@@ -40,6 +41,9 @@
         <path class="middle-path issue abortion" id="voters-abortion-line"></path>
         <path class="middle-path issue immigration" id="voters-immigration-line"></path>
         <path class="middle-path issue terrorism" id="voters-terrorism-line"></path>
+        <path class="middle-path issue public-health" id="voters-public-health-line"></path>
+        <path class="middle-path issue energy" id="voters-energy-line"></path>
+        <path class="middle-path issue education" id="voters-education-line"></path>
 
         <path class="right-path issue economy" id="rep-economy-line"></path>
         <path class="right-path issue healthcare" id="rep-healthcare-line"></path>
@@ -51,6 +55,9 @@
         <path class="right-path issue abortion" id="rep-abortion-line"></path>
         <path class="right-path issue immigration" id="rep-immigration-line"></path>
         <path class="right-path issue terrorism" id="rep-terrorism-line"></path>
+        <path class="right-path issue public-health" id="rep-public-health-line"></path>
+        <path class="right-path issue energy" id="rep-energy-line"></path>
+        <path class="right-path issue education" id="rep-education-line"></path>
     </svg>
     <div class="column">
         <p class="section-header">Joe Biden</p>
@@ -58,14 +65,17 @@
         <div class="stack-right" id="stack-right-blunt">
             <div class="issue-entry issue economy"><a class="issue-label">The Economy</a><span class="dot" id="biden-economy"><a class="dot-number">1</a></span></div>
             <div class="issue-entry issue healthcare"><a class="issue-label">Healthcare</a><span class="dot" id="biden-healthcare"><a class="dot-number">2</a></span></div>
-            <div class="issue-entry issue war"><a class="issue-label">War/Conflict</a><span class="dot" id="biden-war"><a class="dot-number">3</a></span></div>
-            <div class="issue-entry issue environment"><a class="issue-label">Environment</a><span class="dot" id="biden-environment"><a class="dot-number">4</a></span></div>
-            <div class="issue-entry issue inequality"><a class="issue-label">Inequality</a><span class="dot" id="biden-inequality"><a class="dot-number">5</a></span></div>
-            <div class="issue-entry issue crime"><a class="issue-label">Crime</a><span class="dot" id="biden-crime"><a class="dot-number">6</a></span></div>
-            <div class="issue-entry issue morality"><a class="issue-label">Morality</a><span class="dot" id="biden-morality"><a class="dot-number">7</a></span></div>
-            <div class="issue-entry issue abortion"><a class="issue-label">Abortion</a><span class="dot" id="biden-abortion"><a class="dot-number">8</a></span></div>
-            <div class="issue-entry issue immigration"><a class="issue-label">Immigration</a><span class="dot" id="biden-immigration"><a class="dot-number">9</a></span></div>
-            <div class="issue-entry issue terrorism"><a class="issue-label">Terrorism</a><span class="dot" id="biden-terrorism"><a class="dot-ten">10</a></span></div>
+            <div class="issue-entry issue public-health"><a class="issue-label">Public Health</a><span class="dot" id="biden-public-health"><a class="dot-number">3</a></span></div>
+            <div class="issue-entry issue war"><a class="issue-label">War/Conflict</a><span class="dot" id="biden-war"><a class="dot-number">4</a></span></div>
+            <div class="issue-entry issue environment"><a class="issue-label">Environment</a><span class="dot" id="biden-environment"><a class="dot-number">5</a></span></div>
+            <div class="issue-entry issue energy"><a class="issue-label">Energy</a><span class="dot" id="biden-energy"><a class="dot-number">6</a></span></div>
+            <div class="issue-entry issue inequality"><a class="issue-label">Inequality</a><span class="dot" id="biden-inequality"><a class="dot-number">7</a></span></div>
+            <div class="issue-entry issue crime"><a class="issue-label">Crime</a><span class="dot" id="biden-crime"><a class="dot-number">8</a></span></div>
+            <div class="issue-entry issue morality"><a class="issue-label">Morality</a><span class="dot" id="biden-morality"><a class="dot-number">9</a></span></div>
+            <div class="issue-entry issue abortion"><a class="issue-label">Abortion</a><span class="dot" id="biden-abortion"><a class="dot-ten">10</a></span></div>
+            <div class="issue-entry issue education"><a class="issue-label">Education</a><span class="dot" id="biden-education"><a class="dot-ten">11</a></span></div>
+            <div class="issue-entry issue immigration"><a class="issue-label">Immigration</a><span class="dot" id="biden-immigration"><a class="dot-ten">12</a></span></div>
+            <div class="issue-entry issue terrorism"><a class="issue-label">Terrorism</a><span class="dot" id="biden-terrorism"><a class="dot-ten">13</a></span></div>
         </div>
     </div>
     <div class="column" id="svg-column">
@@ -75,74 +85,95 @@
         <p class="section-header" id="header-democrat">Democrats</p>
         <hr class="section-breaker" id="breaker-democrat">
         <div class="stack-right" id="stack-right-endpoints">
+            <div class="issue-entry issue environment">
+                <span class="endpoint" id="democrat-environment-endpoint"></span>
+                <a class="issue-label">Environment</a>
+                <span class="dot" id="democrat-environment-dot">
+                    <a class="dot-number">1</a>
+                </span>
+            </div>
             <div class="issue-entry issue economy">
                 <span class="endpoint" id="democrat-economy-endpoint"></span>
                 <a class="issue-label">The Economy</a>
                 <span class="dot" id="democrat-economy-dot">
-                    <a class="dot-number">1</a>
-                </span>
-            </div>
-            <div class="issue-entry issue crime">
-                <span class="endpoint" id="democrat-crime-endpoint"></span>
-                <a class="issue-label">Crime</a>
-                <span class="dot" id="democrat-crime-dot">
                     <a class="dot-number">2</a>
-                </span>
-            </div>
-            <div class="issue-entry issue immigration">
-                <span class="endpoint" id="democrat-immigration-endpoint"></span>
-                <a class="issue-label">Immigration</a>
-                <span class="dot" id="democrat-immigration-dot">
-                    <a class="dot-number">3</a>
                 </span>
             </div>
             <div class="issue-entry issue inequality">
                 <span class="endpoint" id="democrat-inequality-endpoint"></span>
                 <a class="issue-label">Inequality</a>
                 <span class="dot" id="democrat-inequality-dot">
-                    <a class="dot-number">4</a>
-                </span>
-            </div>
-            <div class="issue-entry issue morality">
-                <span class="endpoint" id="democrat-morality-endpoint"></span>
-                <a class="issue-label">Morality</a>
-                <span class="dot" id="democrat-morality-dot">
-                    <a class="dot-number">5</a>
+                    <a class="dot-number">3</a>
                 </span>
             </div>
             <div class="issue-entry issue healthcare">
                 <span class="endpoint" id="democrat-healthcare-endpoint"></span>
                 <a class="issue-label">Healthcare</a>
                 <span class="dot" id="democrat-healthcare-dot">
-                    <a class="dot-number">6</a>
+                    <a class="dot-number">4</a>
                 </span>
             </div>
-            <div class="issue-entry issue environment">
-                <span class="endpoint" id="democrat-environment-endpoint"></span>
-                <a class="issue-label">Environment</a>
-                <span class="dot" id="democrat-environment-dot">
-                    <a class="dot-number">7</a>
+            <div class="issue-entry issue crime">
+                <span class="endpoint" id="democrat-crime-endpoint"></span>
+                <a class="issue-label">Crime</a>
+                <span class="dot" id="democrat-crime-dot">
+                    <a class="dot-number">5</a>
                 </span>
             </div>
             <div class="issue-entry issue abortion">
                 <span class="endpoint" id="democrat-abortion-endpoint"></span>
                 <a class="issue-label">Abortion</a>
                 <span class="dot" id="democrat-abortion-dot">
-                    <a class="dot-number">8</a>
+                    <a class="dot-number">6</a>
                 </span>
             </div>
             <div class="issue-entry issue terrorism">
                 <span class="endpoint" id="democrat-terrorism-endpoint"></span>
                 <a class="issue-label">Terrorism</a>
                 <span class="dot" id="democrat-terrorism-dot">
+                    <a class="dot-number">7</a>
+                </span>
+            </div>
+            <div class="issue-entry issue education">
+                <span class="endpoint" id="democrat-education-endpoint"></span>
+                <a class="issue-label">Education</a>
+                <span class="dot" id="democrat-education-dot">
+                    <a class="dot-number">8</a>
+                </span>
+            </div>
+            <div class="issue-entry issue morality">
+                <span class="endpoint" id="democrat-morality-endpoint"></span>
+                <a class="issue-label">Morality</a>
+                <span class="dot" id="democrat-morality-dot">
                     <a class="dot-number">9</a>
+                </span>
+            </div>
+            <div class="issue-entry issue immigration">
+                <span class="endpoint" id="democrat-immigration-endpoint"></span>
+                <a class="issue-label">Immigration</a>
+                <span class="dot" id="democrat-immigration-dot">
+                    <a class="dot-ten">10</a>
+                </span>
+            </div>
+            <div class="issue-entry issue public-health">
+                <span class="endpoint" id="democrat-public-health-endpoint"></span>
+                <a class="issue-label">Public Health</a>
+                <span class="dot" id="democrat-public-health-dot">
+                    <a class="dot-ten">11</a>
+                </span>
+            </div>
+            <div class="issue-entry issue energy">
+                <span class="endpoint" id="democrat-energy-endpoint"></span>
+                <a class="issue-label">Energy Issues</a>
+                <span class="dot" id="democrat-energy-dot">
+                    <a class="dot-ten">12</a>
                 </span>
             </div>
             <div class="issue-entry issue war">
                 <span class="endpoint" id="democrat-war-endpoint"></span>
                 <a class="issue-label">War/Conflict</a>
                 <span class="dot" id="democrat-war-dot">
-                    <a class="dot-ten">10</a>
+                    <a class="dot-ten">13</a>
                 </span>
             </div>
         </div>
@@ -175,33 +206,33 @@
                 <a class="issue-label">Immigration</a>
                 <span class="endpoint" id="rep-immigration-endpoint"></span>
             </div>
-            <div class="issue-entry issue inequality">
-                <span class="dot" id="rep-inequality-dot">
-                    <a class="dot-number">4</a>
-                </span>
-                <a class="issue-label">Inequality</a>
-                <span class="endpoint" id="rep-inequality-endpoint"></span>
-            </div>
             <div class="issue-entry issue morality">
                 <span class="dot" id="rep-morality-dot">
-                    <a class="dot-number">5</a>
+                    <a class="dot-number">4</a>
                 </span>
                 <a class="issue-label">Morality</a>
                 <span class="endpoint" id="rep-morality-endpoint"></span>
             </div>
             <div class="issue-entry issue healthcare">
                 <span class="dot" id="rep-healthcare-dot">
-                    <a class="dot-number">6</a>
+                    <a class="dot-number">5</a>
                 </span>
                 <a class="issue-label">Healthcare</a>
                 <span class="endpoint" id="rep-healthcare-endpoint"></span>
             </div>
-            <div class="issue-entry issue environment">
-                <span class="dot" id="rep-environment-dot">
+            <div class="issue-entry issue war">
+                <span class="dot" id="rep-war-dot">
+                    <a class="dot-number">6</a>
+                </span>
+                <a class="issue-label">War/Conflict</a>
+                <span class="endpoint" id="rep-war-endpoint"></span>
+            </div>
+            <div class="issue-entry issue education">
+                <span class="dot" id="rep-education-dot">
                     <a class="dot-number">7</a>
                 </span>
-                <a class="issue-label">Environment</a>
-                <span class="endpoint" id="rep-environment-endpoint"></span>
+                <a class="issue-label">Education</a>
+                <span class="endpoint" id="rep-education-endpoint"></span>
             </div>
             <div class="issue-entry issue terrorism">
                 <span class="dot" id="rep-terrorism-dot">
@@ -210,19 +241,40 @@
                 <a class="issue-label">Terrorism</a>
                 <span class="endpoint" id="rep-terrorism-endpoint"></span>
             </div>
+            <div class="issue-entry issue public-health">
+                <span class="dot" id="rep-public-health-dot">
+                    <a class="dot-number">9</a>
+                </span>
+                <a class="issue-label">Public Health</a>
+                <span class="endpoint" id="rep-public-health-endpoint"></span>
+            </div>
+            <div class="issue-entry issue inequality">
+                <span class="dot" id="rep-inequality-dot">
+                    <a class="dot-ten">10</a>
+                </span>
+                <a class="issue-label">Inequality</a>
+                <span class="endpoint" id="rep-inequality-endpoint"></span>
+            </div>
+            <div class="issue-entry issue energy">
+                <span class="dot" id="rep-energy-dot">
+                    <a class="dot-ten">11</a>
+                </span>
+                <a class="issue-label">Energy Issues</a>
+                <span class="endpoint" id="rep-energy-endpoint"></span>
+            </div>
+            <div class="issue-entry issue environment">
+                <span class="dot" id="rep-environment-dot">
+                    <a class="dot-ten">12</a>
+                </span>
+                <a class="issue-label">Environment</a>
+                <span class="endpoint" id="rep-environment-endpoint"></span>
+            </div>
             <div class="issue-entry issue abortion">
                 <span class="dot" id="rep-abortion-dot">
-                    <a class="dot-number">9</a>
+                    <a class="dot-ten">13</a>
                 </span>
                 <a class="issue-label">Abortion</a>
                 <span class="endpoint" id="rep-abortion-endpoint"></span>
-            </div>
-            <div class="issue-entry issue war">
-                <span class="dot" id="rep-war-dot">
-                    <a class="dot-ten">10</a>
-                </span>
-                <a class="issue-label">War/Conflict</a>
-                <span class="endpoint" id="rep-war-endpoint"></span>
             </div>
         </div>
     </div>
@@ -245,11 +297,11 @@
                 </span>
                 <a class="issue-label">Crime</a>
             </div>
-            <div class="issue-entry issue immigration">
-                <span class="dot" id="trump-immigration">
+            <div class="issue-entry issue public-health">
+                <span class="dot" id="trump-public-health">
                     <a class="dot-number">3</a>
                 </span>
-                <a class="issue-label">Immigration</a>
+                <a class="issue-label">Public Health</a>
             </div>
             <div class="issue-entry issue inequality">
                 <span class="dot" id="trump-inequality">
@@ -257,17 +309,17 @@
                 </span>
                 <a class="issue-label">Inequality</a>
             </div>
-            <div class="issue-entry issue war">
-                <span class="dot" id="trump-war">
+            <div class="issue-entry issue immigration">
+                <span class="dot" id="trump-immigration">
                     <a class="dot-number">5</a>
                 </span>
-                <a class="issue-label">War/Conflict</a>
+                <a class="issue-label">Immigration</a>
             </div>
-            <div class="issue-entry issue environment">
-                <span class="dot" id="trump-environment">
+            <div class="issue-entry issue war">
+                <span class="dot" id="trump-war">
                     <a class="dot-number">6</a>
                 </span>
-                <a class="issue-label">Environment</a>
+                <a class="issue-label">War/Conflict</a>
             </div>
             <div class="issue-entry issue healthcare">
                 <span class="dot" id="trump-healthcare">
@@ -275,32 +327,63 @@
                 </span>
                 <a class="issue-label">Healthcare</a>
             </div>
+            <div class="issue-entry issue environment">
+                <span class="dot" id="trump-environment">
+                    <a class="dot-number">8</a>
+                </span>
+                <a class="issue-label">Environment</a>
+            </div>
+            <div class="issue-entry issue energy">
+                <span class="dot" id="trump-energy">
+                    <a class="dot-number">9</a>
+                </span>
+                <a class="issue-label">Energy Issues</a>
+            </div>
+            <div class="issue-entry issue education">
+                <span class="dot" id="trump-education">
+                    <a class="dot-ten">10</a>
+                </span>
+                <a class="issue-label">Education</a>
+            </div>
             <div class="issue-entry issue morality">
                 <span class="dot" id="trump-morality">
-                    <a class="dot-number">8</a>
+                    <a class="dot-ten">11</a>
                 </span>
                 <a class="issue-label">Morality</a>
             </div>
             <div class="issue-entry issue terrorism">
                 <span class="dot" id="trump-terrorism">
-                    <a class="dot-number">9</a>
+                    <a class="dot-ten">12</a>
                 </span>
                 <a class="issue-label">Terrorism</a>
             </div>
             <div class="issue-entry issue abortion">
                 <span class="dot" id="trump-abortion">
-                    <a class="dot-ten">10</a>
+                    <a class="dot-ten">13</a>
                 </span>
                 <a class="issue-label">Abortion</a>
             </div>
         </div>
     </div>
 </div>
-<hr>
-<p class="bottom-text">Language analysis of speeches given by both candidates on the 2024 campaign trail found that the issues they discuss most frequently do not always align with the policy priorities of their voters, as measured in a <a class="link" href="https://www.reuters.com/graphics/USA-BIDEN/POLL/nmopagnqapa/">recent Reuters poll.</a></p>
 </div>
 
-
+<div class="explainer-box">
+    <p class="headline">When it comes to policy priorities, even voters and candidates disagree.</p>
+    <p class="bottom-text">Language analysis of speeches given by both candidates on the 2024 campaign trail found that the issues they discuss most frequently do not always align with the policy priorities of their voters, as measured in a <a class="link" href="https://www.reuters.com/graphics/USA-BIDEN/POLL/nmopagnqapa/">recent Reuters poll.</a></p>
+    <p class="note" id="economy"><a class="issue-word">The economy</a> remains one of the few issues all parties can agree on, although democratic voters are the only group to rank it less than their first priority, placing economic concerns second to environmental issues.</p>
+    <p class="note" id="healthcare">Although separated by only a few steps at each stage, <a class="issue-word">healthcare</a> receives greater emphasis on the left than on the right, with the issue ranking 2nd in Joe Biden's speeches and only 7th in Donald Trump's.</p>
+    <p class="note" id="public-health">By frequency of mentions, both Joe Biden and Donald Trump place significantly greater emphasis on <a class="issue-word">public health</a> than either of their parties' voters.</p>
+    <p class="note" id="war">Democratic voters are by far the least likely to report <a class="issue-word">war and foreign conflicts</a> as a priority, with only 1% of those polled marking it as a concern.</p>
+    <p class="note" id="environment">Democratic voters list <a class="issue-word">the environment</a> as a higher priority than Joe Biden, but both give more priority to the issue than their counterparts on the right side of the aisle.</p>
+    <p class="note" id="energy">Joe Biden's speeches account for the most emphasis on <a class="issue-word">energy</a>, with voters and Donald Trump all placing little emphasis on the issue.</p>
+    <p class="note" id="inequality">Emphasis placed on <a class="issue-word">inequality</a> varies wildly across the political spectrum, with democratic voters and Donald Trump placing similar emphasis on the issue, while republican voters and Joe Biden both rank it lower in their priorities.</p>
+    <p class="note" id="crime"><a class="issue-word">Crime</a> receives high emphasis throughout the Republican Party, but is ranked slightly lower by democratic voters, and significantly lower by Joe Biden.</p>
+    <p class="note" id="morality"><a class="issue-word">Morality</a> is an issue of significant concern for republican voters, but less so for the Democratic Party and in Donald Trump's speeches.</p>
+    <p class="note" id="abortion"><a class="issue-word">Abortion</a> continues to be a significant issue for democratic voters, but is mentioned little by Joe Biden, and has fallen to lowest priority for both republican voters and Donald Trump.</p>
+    <p class="note" id="immigration">This is a test note</p>
+    <p class="note" id="terrorism">This is a test note</p>
+</div>
 
 <script src='//cdnjs.cloudflare.com/ajax/libs/d3/3.5.16/d3.min.js'></script>
 <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>

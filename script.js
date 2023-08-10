@@ -57,6 +57,9 @@ var dem_economy_line = document.querySelector("#dem-economy-line"),
     dem_immigration_line = document.querySelector("#dem-immigration-line"),
     dem_terrorism_line = document.querySelector("#dem-terrorism-line"),
     dem_inequality_line = document.querySelector("#dem-inequality-line");
+    dem_public_health_line = document.querySelector("#dem-public-health-line"),
+    dem_energy_line = document.querySelector("#dem-energy-line"),
+    dem_education_line = document.querySelector("#dem-education-line");
 
 var biden_economy = document.querySelector("#biden-economy"),
     democrat_economy_endpoint = document.querySelector("#democrat-economy-endpoint"),
@@ -86,7 +89,16 @@ var biden_economy = document.querySelector("#biden-economy"),
     democrat_terrorism_endpoint = document.querySelector("#democrat-terrorism-endpoint"),
 
     biden_inequality = document.querySelector("#biden-inequality"),
-    democrat_inequality_endpoint = document.querySelector("#democrat-inequality-endpoint");
+    democrat_inequality_endpoint = document.querySelector("#democrat-inequality-endpoint"),
+
+    biden_public_health = document.querySelector("#biden-public-health"),
+    democrat_public_health_endpoint = document.querySelector("#democrat-public-health-endpoint"),
+
+    biden_energy = document.querySelector("#biden-energy"),
+    democrat_energy_endpoint = document.querySelector("#democrat-energy-endpoint"),
+
+    biden_education = document.querySelector("#biden-education"),
+    democrat_education_endpoint = document.querySelector("#democrat-education-endpoint");
 
 var voters_economy_line = document.querySelector("#voters-economy-line"),
     voters_healthcare_line = document.querySelector("#voters-healthcare-line"),
@@ -97,7 +109,10 @@ var voters_economy_line = document.querySelector("#voters-economy-line"),
     voters_abortion_line = document.querySelector("#voters-abortion-line"),
     voters_immigration_line = document.querySelector("#voters-immigration-line"),
     voters_terrorism_line = document.querySelector("#voters-terrorism-line"),
-    voters_inequality_line = document.querySelector("#voters-inequality-line");
+    voters_inequality_line = document.querySelector("#voters-inequality-line"),
+    voters_public_health_line = document.querySelector("#voters-public-health-line"),
+    voters_energy_line = document.querySelector("#voters-energy-line"),
+    voters_education_line = document.querySelector("#voters-education-line");
 
 var rep_economy_dot = document.querySelector("#rep-economy-dot"),
     democrat_economy_dot = document.querySelector("#democrat-economy-dot"),
@@ -127,7 +142,16 @@ var rep_economy_dot = document.querySelector("#rep-economy-dot"),
     democrat_terrorism_dot = document.querySelector("#democrat-terrorism-dot"),
 
     rep_inequality_dot = document.querySelector("#rep-inequality-dot"),
-    democrat_inequality_dot = document.querySelector("#democrat-inequality-dot");
+    democrat_inequality_dot = document.querySelector("#democrat-inequality-dot"),
+
+    rep_public_health_dot = document.querySelector("#rep-public-health-dot"),
+    democrat_public_health_dot = document.querySelector("#democrat-public-health-dot"),
+
+    rep_energy_dot = document.querySelector("#rep-energy-dot"),
+    democrat_energy_dot = document.querySelector("#democrat-energy-dot"),
+
+    rep_education_dot = document.querySelector("#rep-education-dot"),
+    democrat_education_dot = document.querySelector("#democrat-education-dot");
 
 var trump_economy = document.querySelector("#trump-economy"),
     rep_economy_endpoint = document.querySelector("#rep-economy-endpoint"),
@@ -157,7 +181,16 @@ var trump_economy = document.querySelector("#trump-economy"),
     rep_terrorism_endpoint = document.querySelector("#rep-terrorism-endpoint"),
 
     trump_inequality = document.querySelector("#trump-inequality"),
-    rep_inequality_endpoint = document.querySelector("#rep-inequality-endpoint");
+    rep_inequality_endpoint = document.querySelector("#rep-inequality-endpoint"),
+
+    trump_public_health = document.querySelector("#trump-public-health"),
+    rep_public_health_endpoint = document.querySelector("#rep-public-health-endpoint"),
+
+    trump_energy = document.querySelector("#trump-energy"),
+    rep_energy_endpoint = document.querySelector("#rep-energy-endpoint"),
+
+    trump_education = document.querySelector("#trump-education"),
+    rep_education_endpoint = document.querySelector("#rep-education-endpoint");
 
 var rep_economy_line = document.querySelector("#rep-economy-line"),
     rep_healthcare_line = document.querySelector("#rep-healthcare-line"),
@@ -168,40 +201,52 @@ var rep_economy_line = document.querySelector("#rep-economy-line"),
     rep_abortion_line = document.querySelector("#rep-abortion-line"),
     rep_immigration_line = document.querySelector("#rep-immigration-line"),
     rep_terrorism_line = document.querySelector("#rep-terrorism-line"),
-    rep_inequality_line = document.querySelector("#rep-inequality-line");
+    rep_inequality_line = document.querySelector("#rep-inequality-line"),
+    rep_public_health_line = document.querySelector("#rep-public-health-line"),
+    rep_education_line = document.querySelector("#rep-education-line"),
+    rep_energy_line = document.querySelector("#rep-energy-line");
 
-drawLine(biden_economy,democrat_economy_endpoint,dem_economy_line);
+drawPath(biden_economy,democrat_economy_endpoint,dem_economy_line);
 drawPath(biden_healthcare,democrat_healthcare_endpoint,dem_healthcare_line);
 drawPath(biden_war,democrat_war_endpoint,dem_war_line,2.25,1.8);
-drawPath(biden_environment,democrat_environment_endpoint,dem_environment_line);
+drawPath(biden_environment,democrat_environment_endpoint,dem_environment_line,2.5,2);
 drawPath(biden_crime,democrat_crime_endpoint,dem_crime_line);
 drawPath(biden_morality,democrat_morality_endpoint,dem_morality_line);
-drawLine(biden_abortion,democrat_abortion_endpoint,dem_abortion_line);
+drawPath(biden_abortion,democrat_abortion_endpoint,dem_abortion_line);
 drawPath(biden_immigration,democrat_immigration_endpoint,dem_immigration_line,2.5,2);
-drawPath(biden_terrorism,democrat_terrorism_endpoint,dem_terrorism_line);
+drawPath(biden_terrorism,democrat_terrorism_endpoint,dem_terrorism_line,1.75,2);
 drawPath(biden_inequality,democrat_inequality_endpoint,dem_inequality_line);
+drawPath(biden_public_health,democrat_public_health_endpoint,dem_public_health_line,1.9,2);
+drawPath(biden_energy,democrat_energy_endpoint,dem_energy_line,2.5,1.9);
+drawPath(biden_education,democrat_education_endpoint,dem_education_line);
 
-drawLine(democrat_economy_dot,rep_economy_dot,voters_economy_line);
-drawLine(democrat_healthcare_dot,rep_healthcare_dot,voters_healthcare_line);
-drawLine(democrat_war_dot,rep_war_dot,voters_war_line);
-drawLine(democrat_environment_dot,rep_environment_dot,voters_environment_line);
-drawLine(democrat_crime_dot,rep_crime_dot,voters_crime_line);
-drawLine(democrat_morality_dot,rep_morality_dot,voters_morality_line);
-drawLine(democrat_abortion_dot,rep_abortion_dot,voters_abortion_line);
-drawLine(democrat_immigration_dot,rep_immigration_dot,voters_immigration_line);
-drawLine(democrat_terrorism_dot,rep_terrorism_dot,voters_terrorism_line);
-drawLine(democrat_inequality_dot,rep_inequality_dot,voters_inequality_line);
+drawPath(democrat_economy_dot,rep_economy_dot,voters_economy_line);
+drawPath(democrat_healthcare_dot,rep_healthcare_dot,voters_healthcare_line,2.2,2);
+drawPath(democrat_war_dot,rep_war_dot,voters_war_line,2.2,2);
+drawPath(democrat_environment_dot,rep_environment_dot,voters_environment_line,1.95,2);
+drawPath(democrat_crime_dot,rep_crime_dot,voters_crime_line,2.2,2);
+drawPath(democrat_morality_dot,rep_morality_dot,voters_morality_line,1.9,2);
+drawPath(democrat_abortion_dot,rep_abortion_dot,voters_abortion_line);
+drawPath(democrat_immigration_dot,rep_immigration_dot,voters_immigration_line,2.1,2.2);
+drawPath(democrat_terrorism_dot,rep_terrorism_dot,voters_terrorism_line);
+drawPath(democrat_inequality_dot,rep_inequality_dot,voters_inequality_line,1.8,2);
+drawPath(democrat_public_health_dot,rep_public_health_dot,voters_public_health_line);
+drawPath(democrat_energy_dot,rep_energy_dot,voters_energy_line);
+drawPath(democrat_education_dot,rep_education_dot,voters_education_line);
 
-drawLine(rep_economy_endpoint,trump_economy,rep_economy_line);
+drawPath(rep_economy_endpoint,trump_economy,rep_economy_line);
 drawPath(rep_healthcare_endpoint,trump_healthcare,rep_healthcare_line);
 drawPath(rep_war_endpoint,trump_war,rep_war_line,1.9,2);
 drawPath(rep_environment_endpoint,trump_environment,rep_environment_line);
-drawLine(rep_crime_endpoint,trump_crime,rep_crime_line);
+drawPath(rep_crime_endpoint,trump_crime,rep_crime_line);
 drawPath(rep_morality_endpoint,trump_morality,rep_morality_line,2.1,2);
 drawPath(rep_abortion_endpoint,trump_abortion,rep_abortion_line);
-drawLine(rep_immigration_endpoint,trump_immigration,rep_immigration_line);
+drawPath(rep_immigration_endpoint,trump_immigration,rep_immigration_line);
 drawPath(rep_terrorism_endpoint,trump_terrorism,rep_terrorism_line);
-drawLine(rep_inequality_endpoint,trump_inequality,rep_inequality_line);
+drawPath(rep_inequality_endpoint,trump_inequality,rep_inequality_line);
+drawPath(rep_public_health_endpoint,trump_public_health,rep_public_health_line);
+drawPath(rep_energy_endpoint,trump_energy,rep_energy_line);
+drawPath(rep_education_endpoint,trump_education,rep_education_line);
 
 function hoverByClass(classname,colorover,colorout="black"){
   var elms=document.getElementsByClassName(classname);
@@ -262,6 +307,10 @@ function hoverByClass(classname,colorover,colorout="black"){
     var anti_selector = ".issue";
     anti_selector = anti_selector.concat(":not(.",classname,")");
     var all_elms = document.querySelectorAll(anti_selector);
+    var note_class = ".note"
+    note_class = note_class.concat("[id='",classname,"']");
+    var curr_issue = document.querySelector(note_class);
+    console.log(curr_issue);
     for(var i=0;i<elms.length;i++){
         elms[i].onmouseover = function(){
             for(var k=0;k<all_elms.length;k++){
@@ -276,6 +325,7 @@ function hoverByClass(classname,colorover,colorout="black"){
                   }
                 }
             }
+            curr_issue.style.display = "block";
         };
         elms[i].onmouseout = function(){
             for(var k=0;k<all_elms.length;k++){
@@ -291,6 +341,7 @@ function hoverByClass(classname,colorover,colorout="black"){
                   }
                 }
             }
+            curr_issue.style.display = "none";
         };
     }
     }
@@ -305,6 +356,9 @@ function hoverByClass(classname,colorover,colorout="black"){
   antiHoverByClass("abortion","lightgrey");
   antiHoverByClass("immigration","lightgrey");
   antiHoverByClass("terrorism","lightgrey");
+  antiHoverByClass("public-health","lightgrey");
+  antiHoverByClass("energy","lightgrey");
+  antiHoverByClass("education","lightgrey");
 
 
 

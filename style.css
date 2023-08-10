@@ -1,5 +1,5 @@
 #full-background-svg {
-  height: 500px;
+  height: 700px;
   width: 1205px;
   background-color: transparent;
   position: absolute;
@@ -67,7 +67,7 @@ path {
 }
 
 .stack-left .dot-ten {
-    left: 5px;
+    left: 2.5px;
 }
 
 .issue-label {
@@ -119,20 +119,23 @@ path {
   clear: both;
 }
 
+
 .connector-path {
   position: absolute;
-  transform: translate(-50px,-66px);
+  transform: translate(-30px,0px);
 }
 
 .middle-path {
   position: absolute;
-  transform: translate(-50px,-66px);
+  transform: translate(-30px,0px);
 }
 
 .right-path {
   position: absolute;
-  transform: translate(-50px,-66px);
+  transform: translate(-30px,0px);
 }
+
+
 
 .section-header {
   text-align: center;
@@ -144,17 +147,22 @@ path {
   font-size: 1.5em;
   width: 100%;
   margin-bottom: 0px;
-  text-align: center;
+  text-align: left;
 }
 
 .viz-wrapper {
-  width: 1250px;
-  padding-left: 50px;
+  width: 1100px;
+  padding-left: 30px;
+  float: left;
 }
 
 .bottom-text {
   font-size: 1.1em;
   line-height: 1.5em;
+  border: 0px;
+  border-top: 2px;
+  border-style: solid;
+  padding-top: 10px;
 }
 
 .section-breaker {
@@ -181,7 +189,7 @@ path {
 }
 
 #svg-column {
-  width: 200px;
+  width: 160px;
   height: 1px;
 }
 
@@ -194,81 +202,6 @@ path {
 .link:hover {
   color: black;
 }
-
-/* multi highlighting */
-
-/*
-.economy:hover ~ .economy {
-  stroke-dasharray: 0px;
-  stroke-width: 5px;
-  stroke: blue;
-  box-shadow: 0 1px 5px #666;
-}
-
-.healthcare:hover ~ .healthcare {
-  stroke-dasharray: 0px;
-  stroke-width: 5px;
-  stroke: blue;
-  box-shadow: 0 1px 5px #666;
-}
-
-.war:hover ~ .war {
-  stroke-dasharray: 0px;
-  stroke-width: 5px;
-  stroke: blue;
-  box-shadow: 0 1px 5px #666;
-}
-
-.environment:hover ~ .environment {
-  stroke-dasharray: 0px;
-  stroke-width: 5px;
-  stroke: blue;
-  box-shadow: 0 1px 5px #666;
-}
-
-.inequality:hover ~ .inequality {
-  stroke-dasharray: 0px;
-  stroke-width: 5px;
-  stroke: blue;
-  box-shadow: 0 1px 5px #666;
-}
-
-.crime:hover ~ .crime {
-  stroke-dasharray: 0px;
-  stroke-width: 5px;
-  stroke: blue;
-  box-shadow: 0 1px 5px #666;
-}
-
-.morality:hover ~ .morality {
-  stroke-dasharray: 0px;
-  stroke-width: 5px;
-  stroke: blue;
-  box-shadow: 0 1px 5px #666;
-}
-
-.abortion:hover ~ .abortion {
-  stroke-dasharray: 0px;
-  stroke-width: 5px;
-  stroke: blue;
-  box-shadow: 0 1px 5px #666;
-}
-
-.immigration:hover ~ .immigration {
-  stroke-dasharray: 0px;
-  stroke-width: 5px;
-  stroke: blue;
-  box-shadow: 0 1px 5px #666;
-}
-
-.terrorism:hover ~ .terrorism {
-  stroke-dasharray: 0px;
-  stroke-width: 5px;
-  stroke: blue;
-  box-shadow: 0 1px 5px #666;
-}
-
-*/
 
 .issue-entry {
   z-index: 100;
@@ -286,4 +219,25 @@ path {
 
 #stack-left-blunt > .issue-entry > .issue-label {
   margin-right: 10px;
+}
+
+.explainer-box {
+  float: left;
+  width: 300px;
+  padding-left: 10px;
+}
+
+.note {
+  display: none;
+  border: 0px;
+  border-top: 2px;
+  border-style: solid;
+  padding-top: 10px;
+  font-size: 1.1em;
+  line-height: 1.5em;
+}
+
+.issue-word {
+  font-weight: bold;
+  color: black;
 }
