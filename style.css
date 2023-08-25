@@ -7,7 +7,7 @@
 
 path {
   fill: transparent;
-  stroke: #000000;
+  stroke: lightgrey;
   stroke-dasharray: 0px;
   stroke-width: 3px;
   z-index: 0;
@@ -18,13 +18,14 @@ path {
 .dot {
   height: 25px;
   width: 25px;
-  background-color: black;
+  background-color: lightgrey;
   border-style: solid;
   border-width: 2px;
   border-radius: 50%;
   display: inline-block;
   position: relative;
   z-index: 1000;
+  border-color: lightgrey;
 }
 
 .endpoint {
@@ -214,6 +215,7 @@ path {
   border-radius: 500px;
   background-color: white;
   border-width: 2px;
+  border-color: lightgrey;
 }
 
 #stack-right-blunt > .issue-entry > .issue-label {
@@ -243,4 +245,18 @@ path {
 .issue-word {
   font-weight: bold;
   color: black;
+}
+
+.environment {
+  border-color: black;
+  stroke: black;
+}
+
+.environment > .dot {
+  background-color: black;
+  border-color: black;
+}
+
+.note[id="environment"] {
+  display: block;
 }

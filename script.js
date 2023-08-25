@@ -248,14 +248,13 @@ drawPath(rep_public_health_endpoint,trump_public_health,rep_public_health_line,2
 drawPath(rep_energy_endpoint,trump_energy,rep_energy_line);
 drawPath(rep_education_endpoint,trump_education,rep_education_line);
 
-function hoverByClass(classname,colorover,colorout="black"){
+function hoverByClass(classname,colorover,colorout="lightgrey"){
   var elms=document.getElementsByClassName(classname);
   for(var i=0;i<elms.length;i++){
       elms[i].onmouseover = function(){
           for(var k=0;k<elms.length;k++){
               elms[k].style.borderColor = colorover;
               elms[k].style.stroke = colorover;
-              elms[k].style.strokeWidth = 5;
 
               var children = elms[k].querySelectorAll(".dot");
               if (children.length > 0) {
@@ -270,7 +269,6 @@ function hoverByClass(classname,colorover,colorout="black"){
           for(var k=0;k<elms.length;k++){
               elms[k].style.stroke = colorout;
               elms[k].style.borderColor = colorout;
-              elms[k].style.strokeWidth = 3;
 
               var children = elms[k].querySelectorAll(".dot");
 
@@ -302,7 +300,7 @@ function hoverByClass(classname,colorover,colorout="black"){
     return(result);
   }
 
-  function antiHoverByClass(classname,colorover,colorout="black"){
+  function antiHoverByClass(classname,colorover,colorout="lightgrey"){
     var elms=document.getElementsByClassName(classname);
     var anti_selector = ".issue";
     anti_selector = anti_selector.concat(":not(.",classname,")");
@@ -346,19 +344,66 @@ function hoverByClass(classname,colorover,colorout="black"){
     }
     }
 
-  antiHoverByClass("economy","lightgrey");
-  antiHoverByClass("healthcare","lightgrey");
-  antiHoverByClass("war","lightgrey");
-  antiHoverByClass("environment","lightgrey");
-  antiHoverByClass("inequality","lightgrey");
-  antiHoverByClass("crime","lightgrey");
-  antiHoverByClass("morality","lightgrey");
-  antiHoverByClass("abortion","lightgrey");
-  antiHoverByClass("immigration","lightgrey");
-  antiHoverByClass("terrorism","lightgrey");
-  antiHoverByClass("public-health","lightgrey");
-  antiHoverByClass("energy","lightgrey");
-  antiHoverByClass("education","lightgrey");
+    function singleSelect(classname,colorover,colorout="lightgrey"){
+      var elms=document.getElementsByClassName(classname);
+      var anti_selector = ".issue";
+      anti_selector = anti_selector.concat(":not(.",classname,")");
+      var all_elms = document.querySelectorAll(anti_selector);
+      var note_class = ".note"
+      var all_notes = document.querySelectorAll(note_class);
+      note_class = note_class.concat("[id='",classname,"']");
+      var curr_issue = document.querySelector(note_class);
+      console.log(curr_issue);
+      for(var i=0;i<elms.length;i++){
+          elms[i].onmouseover = function(){
+              for(var k=0;k<all_elms.length;k++){
+                  all_elms[k].style.borderColor = "lightgrey";
+                  all_elms[k].style.stroke = "lightgrey";
+    
+                  var children = all_elms[k].querySelectorAll(".dot");
+                  if (children.length > 0) {
+                    for (var j=0; j < children.length; j++) {
+                      children[j].style.backgroundColor = "lightgrey";
+                      children[j].style.borderColor = "lightgrey";
+                    }
+                  }
+              }
+              for (var j=0;j<elms.length;j++) {
+                elms[j].style.borderColor = "black";
+                elms[j].style.stroke = "black";
+  
+                var children = elms[j].querySelectorAll(".dot");
+                if (children.length > 0) {
+                  for (var z=0; z < children.length; z++) {
+                    children[z].style.backgroundColor = "black";
+                    children[z].style.borderColor = "black";
+                  }
+                }
+              }
+              for (var x=0; x < all_notes.length; x++) {
+                all_notes[x].style.display = "none";
+              }
+              curr_issue.style.display = "block";
+          };
+          elms[i].onmouseout = function(){
+            curr_issue.style.display = "none";
+        };
+      }
+      }
+
+  singleSelect("economy","black")
+  singleSelect("war","black");
+  singleSelect("environment","black");
+  singleSelect("inequality","black");
+  singleSelect("crime","black");
+  singleSelect("morality","black");
+  singleSelect("abortion","black");
+  singleSelect("immigration","black");
+  singleSelect("terrorism","black");
+  singleSelect("public-health","black");
+  singleSelect("energy","black");
+  singleSelect("education","black");
+  singleSelect("healthcare","black");
 
 
 
