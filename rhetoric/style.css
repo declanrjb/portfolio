@@ -260,3 +260,81 @@ path {
 .note[id="environment"] {
   display: block;
 }
+
+.menu-grid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.header {
+  margin-left: 30px;
+  margin-right: 25px;
+  margin-top: 20px;
+  height: 80px;
+}
+
+.menu-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: fit-content;
+}
+
+.menu-container {
+  display: block;
+  width: fit-content;
+  position: relative;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  float: left;
+  margin-right: 0px;
+}
+
+.menu-item {
+  margin-right: 10px;
+  font-size: 15px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  font-weight: normal !important;
+  background-color: black;
+  border-radius: 99999px;
+}
+
+.menu-item:hover {
+  color: white;
+}
+
+.menu-item>a {
+  color: white;
+  vertical-align: center;
+  text-align: center;
+}
+
+.menu-item>a>i {
+  padding: 10px;
+
+}
+
+.menu {
+  width: fit-content;
+}
+
+.social-icons {
+  margin-left: 10px;
+  position: relative;
+  top: 10px;
+}
+
+.menu-container {
+  box-shadow: 0 1px 2px #666;
+  transition: box-shadow .3s;
+}
+
+.menu-container:hover {
+  box-shadow: 0 1px 6px #666;
+}
+
+.menu {
+  padding: 12px;
+}
