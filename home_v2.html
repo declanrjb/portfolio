@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Declan Bradley - Portfolio</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="shortcut icon" type="image/x-icon" href="quill.ico">
+<script src="https://kit.fontawesome.com/bb1d08a9b2.js" crossorigin="anonymous"></script>
+<style>
+
+.page-margin {
+    width: 10%;
+    height: 500px;
+    float: left;
+}
+
+.page {
+    width: 100%;
+    height: fit-content;
+    float: left;
+    box-shadow: 0 1px 2px #666;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+    background-color: #FFFFFF;
+}
+
+.central-column {
+    width: 80%;
+    height: fit-content;
+    float: left;
+}
+
+.column {
+    float: left;
+}
+
+.content-block {
+    padding: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.page-title {
+    font-size: 3.5em;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+.profile-pic {
+    float: left;
+    width: 25%;
+    border-radius: 50%;
+}
+
+.main-header {
+    vertical-align: middle;
+}
+
+.header-text {
+    float: left;
+    position: relative;
+}
+
+h3 {
+    color: #91a6ff;
+    font-weight: bold;
+    margin: 0px;
+    text-transform: uppercase;
+}
+
+p {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.award {
+    color: grey;
+}
+
+.language {
+    color: #B90E0A;
+}
+
+a[href] {
+    font-weight: normal;
+    text-decoration: none;
+    color: black;
+}
+
+h4 {
+    margin-top: 15px;
+    font-size: 1.1em;
+    margin-bottom: 5px;
+    font-weight: normal;
+}
+
+.caption {
+    font-style: italic;
+    font-weight: normal;
+    color: grey;
+}
+
+.timeline {
+    color: grey;
+    text-transform: uppercase;
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+
+.experience-paragraph {
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+
+#even-split {
+    width: 50%;
+}
+
+#header-banner {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    z-index: 0;
+    position: relative;
+}
+
+#header-profile-shot {
+    width: 200px;
+    left: 6%;
+    margin-top: -105px;
+    border-radius: 50%;
+    border-width: 5px;
+    border-color: white;
+    box-shadow: 0 1px 5px #666;
+    border-style: solid;
+    z-index: 99;
+    position: relative;
+    margin-bottom: 10px;
+
+}
+
+#page-main {
+    width: 60%;
+}
+
+#page-sidebar {
+    width: 40%;
+}
+
+.content-block {
+    padding: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.profile-pic {
+    float: left;
+    width: 25%;
+    border-radius: 50%;
+}
+
+.main-header {
+    vertical-align: middle;
+}
+
+.header-text {
+    float: left;
+    position: relative;
+}
+
+h3 {
+    color: #91a6ff;
+    font-weight: bold;
+    margin: 0px;
+    text-transform: uppercase;
+}
+
+p {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.award {
+    color: grey;
+}
+
+.language {
+    color: #B90E0A;
+}
+
+h4 {
+    margin-top: 15px;
+    font-size: 1.1em;
+    margin-bottom: 5px;
+    font-weight: normal;
+}
+
+.caption {
+    font-style: italic;
+    font-weight: normal;
+    color: grey;
+}
+
+.timeline {
+    color: grey;
+    text-transform: uppercase;
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+
+.experience-paragraph {
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+
+
+
+.portfolio-clip {
+    height: fit-content; 
+    margin-top: 20px;  
+    margin-bottom: 20px;
+    box-shadow: 0 1px 2px #666;
+    transition: box-shadow .3s;
+    background-color: #FFFFFF;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.portfolio-clip:hover {
+    box-shadow: 0 1px 6px #666;
+}
+
+.portfolio-grid {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap-reverse;
+}
+
+.menu-grid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.header {
+    margin-left: 30px;
+    margin-right: 25px;
+    margin-top: 20px;
+    height: 80px;
+}
+
+.menu-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: fit-content;
+}
+
+.menu-container {
+    display: block;
+    width: fit-content;
+    position: relative;
+    margin-top: 0px;
+    float: right;
+    margin-right: 15px;
+}
+
+.menu-item {
+    margin-right: 10px;
+    font-size: 15px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-weight: normal !important;
+    background-color: black;
+    border-radius: 99999px;
+}
+
+.menu-item:hover {
+    color: white;
+}
+
+.menu-item>a {
+    color: white;
+    vertical-align: center;
+    text-align: center;
+}
+
+.menu-item>a>i {
+    padding: 10px;
+
+}
+
+.menu {
+    width: fit-content;
+}
+
+.social-icons {
+    margin-left: 10px;
+    position: relative;
+    top: 10px;
+}
+
+.menu-container {
+    box-shadow: 0 1px 2px #666;
+    transition: box-shadow .3s;
+}
+
+.menu-container:hover {
+    box-shadow: 0 1px 6px #666;
+}
+
+.menu {
+    padding: 12px;
+}
+
+.in-clip-link {
+    color: #91a6ff !important;
+    font-weight: bold !important;
+}
+
+.in-clip-link:hover {
+    color: #1f487e !important;
+}
+
+.portfolio-master-grid {
+    width: 100%;
+    height: fit-content;
+    float: left;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    padding-bottom: 10px;
+    background-color: #FFFFFF;
+}
+
+#header-page {
+    margin-bottom: 0px;
+    transition: box-shadow .3s;
+}
+
+#header-page:hover {
+    box-shadow: 0 1px 5px #666;
+}
+
+</style>
+</head>
+<body>
+
+    <div class="row" style="height: 1200px;">
+        <div class="page-margin"></div>
+        <div class="central-column">
+            <div class="page" id="header-page" style="width: 64.5%; margin-left: 10px; margin-right: 10px;">
+                <img id="header-banner" src="banners/home_header.png">
+                <div class="row" style="height: fit-content;">
+                    <div class="column" style="width: 32%;">
+                        <img id="header-profile-shot" src="profile_pics/reed_headshot.jpeg">
+                    </div>
+                    <div class="column" style="width: 67%;">
+                        <h1 style="margin-top: 10px; font-size: 3em; margin-bottom: 5px;">Declan Bradley</h1>
+                        <p style="margin-top: 0px; padding-top: 0px; font-size: 1.15em;">Computer Science Student and Student Journalist at Reed College</p>
+                    </div>
+                </div>
+            </div>
+            <div class="page" id="header-page" style="width: 32%; margin-left: 10px;">
+                <div class="content-block">
+                    <h3>About Me</h3>
+                    <p style="margin-bottom: 5px;">Programmer, writer, and aspiring data journalist, I'm entering my second year as a computer science student 
+                        at <a class="in-clip-link" href="https://www.reed.edu/">Reed College</a> excited to pursue new stories and new approaches to journalism. My experience 
+                        includes four years at my high school paper, a year editing my college paper, the <a class="in-clip-link" href="https://reedquest.org/"><i>Reed Quest</i></a>, 
+                        and a summer mentorship with Julia Wolfe, Americas Graphics Editor at Reuters. My reporting has been cited in The Oregonian and The Hill, 
+                        and my writing has appeared in Nightingale Magazine and been nationally recognized by the 
+                        <a class="in-clip-link" href="https://studentpress.org/acp/">Associated Collegiate Press</a>.</p>
+                </div>
+            </div>
+            <div class="portfolio-master-grid">
+                <div class="column" style="width: 33%;">
+                    <div class="portfolio-grid">
+                        <a href="https://reedquest.org/reed-college-student-arrests-intifada-november-9-protest/"><div class="portfolio-clip">
+                            <div class="content-block">
+                                 <img src="portfolio/images/intifada_everywhere.png" style="width: 100%;">
+                                 <h2 style="color: black !important;">Reed College Protest Ends in Four Student Arrests, President Bilger Calls For "Mutual Respect For Our Shared Humanity"</h2>
+                                 <hr>
+                                 <p style="color: black">November 2023 | The Reed College Quest</p>
+                                 <hr>
+                                 <p style="color: black; font-weight: normal;">My reporting on a campus protest drew national readership and was ultimately cited in The Oregonian and The Hill.</p>
+                                <hr>
+                            </div>
+                        </div></a>
+                        <a><div class="portfolio-clip">
+                            <div class="content-block">
+                                <h3>RECOGNITION</h3>
+                                    <p><a style="font-weight: bold;">2022 Innovation Pacemaker Award,</a> <br>National Scholastic Press Association</p>
+                                    <p><a style="font-weight: bold;">National Merit Scholar,</a> 2022</p>
+                                    <p><a style="font-weight: bold;">2nd Place Opinion Writing,</a> <br>Associated Collegiate Press <br><a class="award">Spring Journalistic Writing Awards, 2023</a></p>
+                                    <p><a style="font-weight: bold;">Top Ten Best of Show News Website Design,</a> <br>National College Media Conference, Spring 2023</p>
+                                    <p><a style="font-weight: bold;">Top Ten Best of Show Diversity, Equity, and Inclusion Reporting,</a> <br>National College Media Conference, Fall 2023</p>
+                                    <p><a style="font-weight: bold;">First Place Opinion Writing,</a> <br>National Scholastic Press Association <br> <a class="award">Fall Journalistic Writing Awards, 2021</a></p>
+                                    <p><a style="font-weight: bold;">1st Place Review Writing,</a>
+                                        <br>
+                                        <a class="organization">Michigan Interscholastic Press Association</a>
+                                        <br>
+                                        <a class="award">Annual Journalistic Writing Awards, 2022</a>
+                                        <br>
+                                        <a class="award">Annual Journalistic Writing Awards, 2021</a>
+                                    </p>  
+                            </div>
+                        </div></a>
+                    </div>
+                </div>
+                <div class="column" style="width: 33%;">
+                    <div class="portfolio-grid">
+                        <a href="https://reedquest.org/2023/09/28/flaw-in-campus-directory-exposes-id-numbers-of-students-staff-faculty-alumni/"><div class="portfolio-clip">
+                            <div class="content-block">
+                                 <img src="portfolio/images/pidm_json_final.png" style="width: 100%;">
+                                 <h2 style="color: black !important;">Flaw in Campus Directory Exposes ID Numbers of Students, Staff, Faculty, Alumni</h2>
+                                 <hr>
+                                 <p>September 2023 | The Reed College Quest</p>
+                                 <hr>
+                            </div>
+                        </div></a>
+                        <a href="https://reedquest.org/2023/10/13/insight-new-york-times-ranks-reed-in-bottom-8th-percentile-for-economic-diversity-among-selective-u-s-colleges/"><div class="portfolio-clip">
+                            <div class="content-block">
+                                <div class="flourish-embed flourish-scatter" data-src="visualisation/15051973" data-height="300px"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+                                <h2 style="color: black !important; margin-top: 0px;">Insight: New York Times Ranks Reed in Bottom 8th Percentile for “Economic Diversity” Among Selective U.S. Colleges</h2>
+                                 <hr>
+                                 <p style="color: black;">October 2023 | The Reed College Quest</p>
+                                 <hr>
+                                 <p class="caption">8th in the Nation for Diversity, Equity, and Inclusion Reporting, Associated Collegiate Press</p>
+                                 <hr>
+                            </div>
+                        </div></a>
+                    </div>
+                </div>
+                <div class="column" style="width: 34%;">
+                    <div class="portfolio-grid">
+                        <a href="https://nightingaledvs.com/dvs-mentorship-data-journalism/"><div class="portfolio-clip">
+                            <div class="content-block">
+                                <img src="portfolio/images/nightingale_logo.webp" style="width: 100%;">
+                                 <h2 style="color: black !important;">How a DVS Mentorship Changed My Approach to Data Journalism</h2>
+                                 <hr>
+                                 <p style="color: black;">November 2023 | Nightingale Magazine</p>
+                                 <hr>
+                            </div>
+                        </div></a>
+                        <a><div class="portfolio-clip">
+                            <div class="content-block">
+                                <h3>EXPERIENCE</h3>
+                                <h4><b>The Reed College Quest — </b><a class="caption">Editor</a></h4>
+                                <p class="timeline">DECEMBER 2022 - PRESENT</p>
+                                <h4><b>ReThink Media — </b><a class="caption">Data Science Intern</a></h4>
+                                <p class="timeline">MAY 2023 - JULY 2023</p>
+                                <h4><b>National College Media Conference,</b> Associated Collegiate Press —<a class="caption">Speaker</a></h4>
+                                <p class="timeline">MARCH 2023</p>
+                                <h4><b>Digital D.C. Workshop,</b> The Washington Post & Associated Collegiate Press</h4>
+                                <p class="timeline">JULY 2022</p>
+                                <h4><b>Data Visualization Society Mentorship Program</b></h4>
+                                <p class="timeline">JUNE 2023 - PRESENT</p>
+                            </div>
+                        </div></a>
+                        <div class="portfolio-clip">
+                            <div class="column" style="width: 45%">
+                                <img src="clips/ios_screenshot.png" style="width: 95%; margin: 20px;">
+                            </div>
+                            <div class="column" style="width: 55%">
+                                <div class="content-block">
+                                    <h2 style="margin-bottom: 0px;">App Development</h2>
+                                    <p style="margin-top: 10px;">I developed and launched native iOS and Android apps for my college paper, a project that significantly increased our readership among our largely mobile audience.</p>
+                                    <a style="display: inline-block; overflow: hidden; border-radius: 13px; width: 100%; height: auto;" href="https://apps.apple.com/us/app/reed-quest/id1665014392?itsct=apps_box_badge&amp;itscg=30200"><img style="border-radius: 13px; width: 100%; height: auto;" src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83&amp;releaseDate=1681171200" alt="Download on the App Store" /></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h1 style="margin-left: 20px; margin-bottom: 10px; margin-top: 15px; margin-right: 30px;">Data Journalism</h1>
+            <hr>
+            <iframe src="https://declanrjb.github.io/congress-finance/" style="width: 100%; height: 1000px; border: none; margin-top: 0px;"></iframe>
+            <div class="portfolio-master-grid">
+                <div class="column" style="width: 66%;">
+                    <div class="portfolio-grid">
+                        <a href="rhetoric/rhetoric.html"><div class="portfolio-clip">
+                            <div class="content-block">
+                                 <img src="portfolio/images/final_rhetoric_draft.png" style="width: 100%;">
+                                 <h2 style="color: black !important;">Analyzing Presidential Rhetoric</h2>
+                                 <hr>
+                                 <p style="color: black">October 2023 | Interactive Data Tool</p>
+                                 <hr>
+                            </div>
+                        </div></a>
+                        <a href="https://reedquest.org/2023/09/08/insight-president-bilgers-salary/"><div class="portfolio-clip">
+                            <div class="content-block">
+                                <div class="flourish-embed flourish-chart" data-src="visualisation/14604076" data-height="600px"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+                                <h2 style="color: black !important; margin-top: 0px;">Insight: President Bilger’s Salary</h2>
+                                 <hr>
+                                 <p style="color: black;">September 2023 | The Reed College Quest</p>
+                                 <hr>
+                            </div>
+                        </div></a>
+                    </div>
+                </div>
+                <div class="column" style="width: 33%;">
+                    <div class="portfolio-grid">
+                        <a href="portfolio/staff_pay_explained.html"><div class="portfolio-clip">
+                            <div class="content-block">
+                                 <img src="portfolio/images/staffpay_scatter.png" style="width: 100%;">
+                                 <h2 style="color: black !important;">Staff Pay Explained: What Would Have Changed, and why Staff and Faculty Objected</h2>
+                                 <hr>
+                                 <p style="color: black">March 2023 | The Reed College Quest</p>
+                                 <hr>
+                            </div>
+                        </div></a>
+                        <div class="portfolio-clip">
+                            <div class="content-block">
+                                <div class="flourish-embed flourish-chart" data-src="visualisation/13359117" data-height="500px"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+                            </div>
+                        </div>
+                        <div class="portfolio-clip">
+                            <div class="content-block">
+                                <div class="flourish-embed flourish-scatter" data-src="visualisation/14446668"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h1 style="margin-left: 20px; margin-bottom: 10px; margin-top: 15px; margin-right: 30px;">Opinion Writing</h1>
+            <hr>
+            <div class="portfolio-master-grid">
+                <div class="column" style="width: 33%;">
+                    <a href="portfolio/expanse_s6_review.html"><div class="portfolio-clip">
+                        <div class="content-block">
+                             <img src="portfolio/images/expanse_s6_header.webp" style="width: 100%;">
+                             <h2 style="color: black !important;">The Expanse Season 6 Review: Reason to Hope</h2>
+                             <hr>
+                             <p>January 2022 | The City Voice</p>
+                             <hr>
+                             <p class="caption">1st in the State for Review Writing, Michigan Interscholastic Press Association</p>
+                             <hr>
+                        </div>
+                    </div></a>
+                    <a href="portfolio/dune_review.html"><div class="portfolio-clip">
+                        <div class="content-block">
+                             <img src="portfolio/images/dune_header.jpg" style="width: 100%;">
+                             <h2 style="color: black !important;">Dune Review: Only the Beginning</h2>
+                             <hr>
+                             <p style="color: black;">November 2021 | The City Voice</p>
+                             <hr>
+                             <p class="caption">1st in the Nation for Opinion Writing, National Scholastic Press Association</p>
+                             <hr>
+                        </div>
+                    </div></a>
+                </div>
+                <div class="column" style="width: 33%;">
+                    <a href="portfolio/dnd_review.html"><div class="portfolio-clip">
+                        <div class="content-block">
+                             <img src="portfolio/images/dnd_movie_header.webp" style="width: 100%;">
+                             <h2 style="color: black !important;">Dungeons and Dragons: Honor Among Thieves is a Surprisingly Charming Tale of Found Family</h2>
+                             <hr>
+                             <p style="color: black;">April 2023 | The Reed College Quest</p>
+                             <hr>
+                             <p class="caption">Associated Collegiate Press Nationally Award Winning Story</p>
+                             <hr>
+                        </div>
+                     </div></a>
+                     <a href="portfolio/expanse_s5_review.html"><div class="portfolio-clip">
+                        <div class="content-block">
+                             <img src="portfolio/images/expanse_s5_header.jpg" style="width: 100%;">
+                             <h2 style="color: black !important;">The Expanse Season 5 Review</h2>
+                             <hr>
+                             <p style="color: black;">February 2021 | The City Voice</p>
+                             <hr>
+                            <p class="caption">1st in the State for Review Writing, Michigan Interscholastic Press Association</p>
+                            <hr>
+                        </div>
+                    </div></a>
+                </div>
+                <div class="column" style="width: 33%;">
+                
+                </div>
+            </div>
+            <h1 style="margin-left: 20px; margin-bottom: 10px; margin-top: 15px; margin-right: 30px;">Development</h1>
+            <hr>
+            <div class="portfolio-master-grid">
+                <div class="column" style="width: 33%;">
+                    <a href="https://reedquest.org/2023/11/06/we-annotated-the-supreme-courts-decision-on-affirmative-action/"><div class="portfolio-clip">
+                        <div class="content-block">
+                             <h2 style="color: black !important; margin-top: 0px;">Annotating the Supreme Court's Decision on Affirmative Action</h2>
+                             <hr>
+                             <p style="color: black;">November 2023 | The Reed College Quest</p>
+                             <hr>
+                             <p style="color: black;">Unable to pay for the Flourish text annotator, I created an <a class="in-clip-link" href="https://github.com/Reed-Quest/text-annotator">open source tool</a> for building interactive stories focused on annotating important documents. This recent story in the Reed College Quest, which annotates the Supreme Court's June decision on affirmative action, is one example of the tool in use.</p>
+                             <hr style="color: black; margin: 5px;">
+                        </div>
+                    </div></a>
+                </div>
+                <div class="column" style="width: 66%;">
+                    
+                </div>
+            </div>
+        </div>
+        <div class="page-margin"></div>
+    </div>
