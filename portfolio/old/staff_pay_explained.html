@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Declan Bradley - Portfolio</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="shortcut icon" type="image/x-icon" href="quill.ico">
+<script src="https://kit.fontawesome.com/bb1d08a9b2.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="./unified_portfolio_stylesheet.css">
+</head>
+<body>
+
+    <div class="row" style="height: 1200px;">
+        <div class="page-margin"></div>
+        <div class="page">
+            <div class="content-block">
+                <p class="categories">News Writing</p>
+                <h1>Staff Pay Explained: What Would Have Changed, and Why Staff and Faculty Objected</h1>
+                <hr>
+                <p>Friday, 31 March 2023 | <a href="https://reedquest.org/2023/03/31/staff-pay-explained/">https://reedquest.org/2023/03/31/staff-pay-explained/</a></p>
+                <hr>
+                <div class="column">
+                    <p>Over the last several weeks, Reed College staff and faculty have raised ongoing objections to the college's proposed changes to the staff compensation system, changes that have since been placed on indefinite hold for "further review." As several audience members noted at Tuesday's staff meeting, the proposed changes have often been somewhat technical and opaque. It is my hope that, by presenting our team's conclusions from a week of data analysis in R, we will be able to further clarify the effect these changes would have on Reed staff. We understand, of course, that this is both incomplete and rushed, as breaking news often is, and welcome any and all corrections from staff, faculty, or administration. Comment below, or shoot us an email, and we'll do our best to update this page in real time as we learn more.</p>
+                    <hr>
+                    <h2>A Note on How We Obtained this Data</h2>
+                    <p>This analysis is based on a series of four files posted to the Reed HR website: staff-pay-ranges.pdf, job-titles-and-grades.xlsx, non-exempt-grades.xlsx, and exempt-grades.xlsx. Three of these four files have since been taken down, and only job-titles-and-grades.xlsx remains, but the Quest is working from locally saved copies.Upon close examination of the data, Quest reporters discovered that two of the files, exempt-ranges.xlsx and non-exempt-grades.xlsx, contained secondary data tables titled "Exempt Ranges - Hidden" and "Non-Exempt Grades - Hidden" respectively.</p>
+                    <img src="https://i0.wp.com/reedquest.org/wp-content/uploads/2023/03/Screenshot-2023-03-30-at-1.41.36-PM-2859519386-e1680240680903.png?resize=2048%2C827&ssl=1">
+                    <p>These two hidden tables appear to contain data on proposed pay ranges for grades 11-17, which staff had requested at Tuesday’s staff meeting and been denied (see this week’s story on that meeting). The Quest’s working theory is that, at some point, someone working in a large Excel project intended to export only a single sheet tab, likely “Exempt Ranges” or “Non-Exempt Grades,” but instead accidentally exported and published the entire Excel project, including the hidden tables.</p>
+                    <img src="https://i0.wp.com/reedquest.org/wp-content/uploads/2023/03/fotor_2023-3-30_13_50_28.png?resize=2048%2C1111&ssl=1">
+                    <p>After consulting with lawyers from the <a href="https://splc.org/">Student Press Law Center</a>, the Quest has decided that, in light of staff questions on the matter, we have an obligation to publish this data.</p>
+                    <p>We would like to make clear that none of our reporters engaged in unprofessional tactics or attempted to gain access to confidential information. These are the exact files that Reed HR published on their own website, and anyone with an internet connection had access to them for several days before they were taken down. Nevertheless, as a concession to privacy concerns, the editorial board has decided not to publish the raw data tables or source code — as we do in other data driven stories — and instead will only refer to the data in visualizations and generalized ranges for each pay grade.</p>
+                    <hr>
+                    <div class="flourish-embed flourish-scatter" data-src="visualisation/13245945"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+                    <p>First, it’s important to correct a misconception which I’ve heard from several other students, and which I myself held before I started reporting on the story: namely that this change would somehow affect pay for faculty. It would not. These changes are to staff compensation only, although many faculty have been advocating on behalf of staff, as they did at last week’s faculty meeting.</p>
+                    <p>How, then, would staff pay change? Under the previous system of staff salaries for 2021-22, according to the PDF released by HR, staff were paid within a minimum-maximum pay range defined by position, where each position had its own range.</p>
+                    <p>However, under the proposed new system, multiple positions could be lumped into a single “Pay Grade”, giving them a shared pay range of maximum and minimum pay. Note that this would increase the minimum pay for some positions, but decrease the maximum for others, although HR has assured staff that there will be no reductions in current salaries, even if a staff member’s current pay would have exceeded their new maximum pay.</p>
+                    <p>This means that, under the proposed system, compensation for some positions would have been capped below current levels, while others would have had their ranges extended. Seen above, the Quest calculated aggregate data on changes to minimum and maximum pay for employees in each new pay grade, and found that a majority of employees (roughly 103 of the 183 positions listed in HR documents) would have been affected by decreases to their maximum pay caused by being sorted into newly created pay grades 4, 5, and 6. Pay Grade 3’s maximum pay would have declined the most, while Pay Grades 7, 8, 9, and 10 would have seen their maximum pay increase.</p>
+                    <div class="flourish-embed flourish-scatter" data-src="visualisation/13243933"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+                </div>
+                <div class="column">
+                    <p>Above, we provide a more granular view of the data broken down to the level of individual positions. Note that the median for overall changes in both maximum and minimum pay appears at first to hover near or above zero, but the decreases in pay pulling the 1st quartile below zero fall disproportionately on lower pay grades like 4, 5, and 6.</p>
+                    <p>Between them, the salaried staff members sorted into pay grades 4, 5, and 6 stand to lose more than $37,690 in collective annual earning potential. This statistic does not include the hourly employees in this or other grades, who are not depicted in the above charts due to scale constraints and the difficulty of projecting their earnings onto an annual metric.</p>
+                    <p>Meanwhile, compensation ranges for the upper-level grades in the proposed pay-scale system remain high. While the HR department likely did not intend to release this data, the “Hidden” tables contained in the file packages published on the HR website provide data on Pay Grades 11 and up, including what appears to be the highest grade, Grade 17, at $309,100 to $494,600 a year.</p>
+                    <div class="flourish-embed flourish-scatter" data-src="visualisation/13234550"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+                    <p>As a result, the proposed system would likely further stratify an already stratified pay system for staff. According to Reed’s 990 financial disclosure forms from 2019, which the Quest obtained through <a href="https://projects.propublica.org/nonprofits/display_990/930386908/05_2021_prefixes_92-94%2F930386908_202006_990_2021052618201096">ProPublica</a>, the college’s highest paid employee that year was Vice President Hugh Porter, at $435,935 a year, while President Audrey Bilger received $304,592. This confirms that these hidden data tables are likely correct, since the upper level pay grades correspond at least roughly to 2019 pay for upper level employees. It also implies that, if the data is accurate, the college’s compensation range for its highest paid employees has likely increased over the last four years, and would continue to do so under the new system.</p>
+                    <div class="flourish-embed flourish-scatter" data-src="visualisation/13234727"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+                    <p>Seen above, a shift to compensation under the proposed pay system would further stratify staff into fixed pay categories, but it would also standardize pay across departments and positions. Note that in most grades, such as Grade 5, individual positions can be seen shifting from a chaotic distribution, spread out across the x-axis by role, to a more uniform one in which all job positions in a given grade share endpoints. HR representatives have cited “internal pay equity” as a justification for the original development of this plan, and this could be seen as evidence to that effect.</p>
+                    <p>However, note also that, according to the publicly released Excel sheet of job titles and grades, it is seemingly possible for multiple employees holding the same position and job title to be placed into different pay grades, and receive different compensation ranges as a result.</p>
+                    <div class="flourish-embed flourish-table" data-src="visualisation/13261389"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+                    <p>For example, above, the table references five distinct Directors of Student Life, three of whom are assigned to Grade 6, another to Grade 7, and the last to Grade 8. While one of three Grade 6 Directors is listed as “live-in”, it is not immediately clear why this would not make them eligible for higher compensation than the other two, nor what distinguishes the Grade 7 and Grade 8 Directors from the first three.</p>
+                    <p>Opaque details like this are part of what have driven staff and faculty objections to the proposed system, with staff at Tuesday’s meeting expressing confusion, and one faculty member saying that they “could not make sense of” HR communications. Regardless, staff outcry has led to a pause in the “compensation project,” with Vice President of Finance Lynn Valenter and President Audrey Bilger apologizing to staff, while confirming that the proposed changes had been placed “under review until further notice.” We await further updates on this situation and the future of staff compensation at Reed.</p>
+                </div>
+            </div>
+            
+        </div>
+        <div class="page-margin">
+            <div class="menu-container">
+                <div class="menu-wrapper">
+                    <div class="menu">
+                        <h1 style="margin-bottom: 0px; margin-top: 0px; font-size: 2.2em;">Declan Bradley</h1>
+                        <hr style="color: black; border-color: black; font-weight: 200;">
+                        <div class="menu-grid">
+                            <p class="menu-item"><a href="../index.html"><i class="fa-solid fa-house"></i></a></p>
+                            <p class="menu-item"><a href="../portfolio.html"><i class="fa-regular fa-clipboard" style="padding-left: 12px; padding-right: 12px;"></i></a></p>
+                            <p class="menu-item"><a href="../index.html"><i class="fa-regular fa-user"></i></a></p>
+                            <p class="menu-item"><a href="https://www.linkedin.com/in/declan-bradley-1a7685285/"><i class="fa-brands fa-linkedin""></i></a></p>
+                            <p class="menu-item"><a href="mailto:declanrjb@gmail.com"><i class="fa-regular fa-envelope"></i></a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
