@@ -1,0 +1,30 @@
+.column {
+    float: left;
+}
+
+img {
+    width: 100%;
+}
+
+.youtube-player {
+    width: 100%;
+}
+
+.caption {
+    text-align: center;
+    color: grey;
+    font-size: 1.1em;
+}
+
+p {
+    font-size: 1.2em;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.page-title {
+    margin-top: 10px;
+}
+
+h3 {
+    margin-bottom: 0px;
+}
