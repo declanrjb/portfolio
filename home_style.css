@@ -77,6 +77,11 @@ a[href] {
     color: black;
 }
 
+hr {
+    border-width: 1px !important;
+    border: solid;
+}
+
 h4 {
     margin-top: 15px;
     font-size: 1.1em;
