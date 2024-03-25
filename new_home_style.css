@@ -54,7 +54,7 @@
     font-size: 1.1em;
     font-family: 'Times New Roman', Times, serif;
     position: relative;
-    top: 100px;
+    top: 90px;
 }
 
 .footnote-separator {
@@ -66,7 +66,7 @@
     width: 100%;
     margin: 20px;
     margin-left: 0px;
-    font-size: 1.1em;
+    font-size: 1em;
     font-family: 'Times New Roman', Times, serif;
     max-height: fit-content !important;
     height: fit-content;
