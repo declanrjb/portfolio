@@ -1,0 +1,125 @@
+.column {
+    float: left;
+}
+
+#left-col {
+    width: 35%;
+}
+
+#right-col {
+    width: 65%;
+}
+
+.profile-section {
+    width: 50%;
+    left: 30%;
+    position: relative;
+    top: 130px;
+    height: fit-content;
+}
+
+#profile-pic {
+    width: 100%;
+    border-radius: 999px;
+}
+
+#username {
+    position: relative;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 3em;
+    margin-top: 0px;
+}
+
+#bluesky-icon {
+    width: 42px;
+    position: relative;
+    top: 3px;
+}
+
+.social-icons {
+    text-align: center;
+    margin-top: -20px;
+}
+
+.social-button {
+    font-size: 3em;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.bio-block {
+    width: 80%;
+    margin: 20px;
+    font-size: 1.1em;
+    font-family: 'Times New Roman', Times, serif;
+    position: relative;
+    top: 90px;
+}
+
+.footnote-separator {
+    width: 105%;
+    margin-left: 0px;
+}
+
+.footnote-block {
+    width: 100%;
+    margin: 20px;
+    margin-left: 0px;
+    font-size: 1em;
+    font-family: 'Times New Roman', Times, serif;
+    max-height: fit-content !important;
+    height: fit-content;
+    padding-bottom: 20px;
+}
+
+.footnote {
+    vertical-align: super;
+    font-size: .75em;
+    font-weight: bold;
+}
+
+.footnote:hover {
+    color: #eb5e28;
+}
+
+a[href] {
+    color: black;
+    text-decoration: underline;
+    text-decoration-color: orange;
+    text-decoration-thickness: 3px;
+}
+
+a[href]:hover {
+    background-color: lightgrey;
+}
+
+.social-button:hover {
+    color: blue;
+    background-color: transparent !important;
+}
+
+@media screen and (max-width: 800px) {
+    .column {
+        width: 100% !important;
+        height: fit-content;
+    }
+
+    .profile-section {
+        width: 90%;
+        height: fit-content;
+        margin: 20px;
+        position: relative;
+        left: 0px;
+        top: 0px;
+    }
+
+    .bio-block {
+        width: 90%;
+        margin: 20px;
+        font-size: 1.1em;
+        font-family: 'Times New Roman', Times, serif;
+        position: relative;
+        top: 0px;
+    }
+}
