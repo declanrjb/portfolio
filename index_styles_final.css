@@ -144,7 +144,7 @@ h2 {
     margin: 10px;
     object-fit: cover;
     aspect-ratio: 1/1;
-    border-radius: 100px;
+    border-radius: 100%;
     float: left;
 }
 
