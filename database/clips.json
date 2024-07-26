@@ -1,0 +1,80 @@
+{
+    "clips":[
+        {
+            "image":"clips/congress-network.png",
+            "title":"By the Numbers: Exploring Campaign Finance in the 2022 US Midterms",
+            "date":"March 2023",
+            "publication":"The Reed College Quest",
+            "award":"2023 Multimedia Story of the Year, Associated Collegiate Press",
+            "link":"https://declanrjb.github.io/congress-finance",
+            "type":"Data-Driven Stories"
+        },
+        {
+            "image":"portfolio/images/pidm_json_final.png",
+            "title":"Flaw in Campus Directory Exposes ID Numbers of Students, Staff, Faculty, Alumni",
+            "date":"September 2023",
+            "publication":"The Reed College Quest",
+            "award":"2nd in the Nation for News Writing, Associated Collegiate Press",
+            "link":"./portfolio/systems_flaw/final.html",
+            "type":"Writing & Reporting"
+        },
+        {
+            "image":"portfolio/images/single-stv-box.png",
+            "title":"Electoral Counting Method Disenfranchises Reed Voters",
+            "date":"March 2023",
+            "publication":"The Reed Inquirer",
+            "about":"Interactive data-based explainer on flaws in the college's vote counting process.",
+            "link":"https://reedinquirer.org/ranked-choice.html",
+            "type":"Data-Driven Stories"
+        },
+        {
+            "image":"portfolio/jess-yao/valentine.jpg",
+            "title":"Getting to the Heart of Data at Reed",
+            "date":"March 2024",
+            "publication":"Reed Magazine",
+            "about":"Feature piece published in the college's alumni magazine.",
+            "link":"https://www.reed.edu/reed-magazine/articles/2024/jess-yao-profile.html",
+            "type":"Writing & Reporting"
+        },
+        {
+            "image":"portfolio/images/targeted-colleges.png",
+            "title":"Non-Credible Bomb Threat Targeted Reed, 200+ Other Colleges, Data Shows",
+            "date":"March 2024",
+            "publication":"The Reed Inquirer",
+            "link":"https://reedinquirer.org/#bomb-threat",
+            "type":"Data-Driven Stories"
+        },
+        {
+            "image":"clips/arborist.png",
+            "title":"Arborist: Web Pages Reimagined",
+            "date":"June 2024",
+            "publication":"Standalone Site",
+            "link":"https://declanrjb.github.io/arborist/",
+            "type":"Coding Projects"
+        },
+        {
+            "title":"Federal Inmate Complaints Data Cleaning & Scraping",
+            "date":"July 2024",
+            "publication":"The Data Liberation Project",
+            "link":"https://github.com/declanrjb/dlp-inmate-complaints",
+            "type":"Coding Projects",
+            "image":"clips/bop-cleaning.png"
+        },
+        {
+            "image":"portfolio/images/final_rhetoric_draft.png",
+            "title":"How a DVS Mentorship Changed My Approach to Data Journalism",
+            "date":"November 2023",
+            "publication":"Nightingale Magazine",
+            "link":"https://nightingaledvs.com/dvs-mentorship-data-journalism/",
+            "type":"Writing & Reporting"
+        },
+        {
+            "image":"portfolio/images/staffpay_scatter.png",
+            "title":"Staff Pay Explained: What Would Have Changed, and why Staff and Faculty Objected",
+            "date":"March 2023",
+            "publication":"The Reed College Quest",
+            "link":"./portfolio/staff_pay_explained.html",
+            "type":"Data-Driven Stories"
+        }
+    ]
+}
