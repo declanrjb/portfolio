@@ -15,6 +15,8 @@ function addChildClassed(parent,newClass,tag='div') {
 d3.json('portfolio.json')
     .then(data => {
 
+        document.title = data['homepage']['name'] + ' — Portfolio'
+
         /* set the photo */
         document.querySelector('#creator-photo').setAttribute('src',data['homepage']['photo'])
 
