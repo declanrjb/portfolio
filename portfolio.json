@@ -1,7 +1,45 @@
 {
+    "homepage":{
+        "photo":"style/profile_pics/reed_headshot_bw.jpeg",
+        "name":"Declan Bradley",
+        "socials":{
+            "handle":"@declanrjb",
+            "platforms":[
+                {
+                    "icon":"fa-brands fa-github",
+                    "link":"https://github.com/declanrjb"
+                },
+                {
+                    "icon":"fa-brands fa-linkedin",
+                    "link":"https://www.linkedin.com/in/declan-bradley-1a7685285/"
+                }
+            ]
+        },
+        "bio":{
+            "format":"rich",
+            "text":"<p>College student and student journalist. Fall intern for the <a href='https://www.chronicle.com/'>Chronicle of Higher Education</a>, Associated Press Automated Webscraper, and volunteer for the <a href='https://www.data-liberation-project.org/'>Data Liberation Project</a>. <a href='DeclanBradley_Resume.pdf'>See my resume</a>.</p>"
+        },
+        "menu":{
+            "include-all":"TRUE",
+            "tags":[
+                {
+                    "icon":"fa-solid fa-chart-simple",
+                    "text":"Data-Driven Stories"
+                },
+                {
+                    "icon":"fa-solid fa-code",
+                    "text":"Coding Projects"
+                },
+                {
+                    "icon":"fa-solid fa-pencil",
+                    "text":"Writing & Reporting"
+                }
+            ]
+        }
+    },
     "clips":[
         {
-            "image":"clips/congress-network.png",
+            "image":"portfolio/clips/congress-network.png",
             "title":"By the Numbers: Exploring Campaign Finance in the 2022 US Midterms",
             "date":"March 2023",
             "publication":"The Reed College Quest",
@@ -45,7 +83,7 @@
             "type":"Data-Driven Stories"
         },
         {
-            "image":"clips/arborist.png",
+            "image":"portfolio/clips/arborist.png",
             "title":"Arborist: Web Pages Reimagined",
             "date":"June 2024",
             "publication":"Standalone Site",
@@ -53,12 +91,12 @@
             "type":"Coding Projects"
         },
         {
+            "image":"portfolio/clips/bop-cleaning.png",
             "title":"Federal Inmate Complaints Data Cleaning & Scraping",
             "date":"July 2024",
             "publication":"The Data Liberation Project",
             "link":"https://github.com/declanrjb/dlp-inmate-complaints",
-            "type":"Coding Projects",
-            "image":"clips/bop-cleaning.png"
+            "type":"Coding Projects"
         },
         {
             "image":"portfolio/images/final_rhetoric_draft.png",
