@@ -372,5 +372,11 @@ h4 {
     .name-title {
         margin-top: 0px;
     }
+}
 
+@media screen and (min-width: 820px) {
+    .bio-block {
+        position: fixed;
+        width: 290px;
+    }
 }
