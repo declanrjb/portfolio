@@ -55,7 +55,7 @@
             "image":"portfolio/images/inmate-complaints.png",
             "title":"Federal Inmates Have Filed Millions of Complaints Against Their Jailers. Most Go Unheard.",
             "date":"July 2024",
-            "publication":"Columbia University Lede Program for Data Journalism",
+            "publication":"Lede Program for Data Journalism @ Columbia University",
             "link":"https://declanrjb.github.io/lede-project2/",
             "type":"Lede Program @ CU"
         },
@@ -67,6 +67,15 @@
             "award":"2nd in the Nation for News Writing, Associated Collegiate Press",
             "link":"./portfolio/systems_flaw/final.html",
             "type":"Writing & Reporting"
+        },
+        {
+            "image":"portfolio/clips/tomatoes-gender-chart.png",
+            "title":"The Silver Ceiling",
+            "date":"June 2024",
+            "publication":"Lede Program for Data Journalism @ Columbia University",
+            "about":"An analysis of 10,213 movie listings reveals the monetary cost of misogyny for women who direct, and star in, major films.",
+            "link":"https://declanrjb.github.io/lede-project-1/",
+            "type":"Lede Program @ CU"
         },
         {
             "image":"portfolio/images/single-stv-box.png",
@@ -107,8 +116,8 @@
             "title":"Federal Inmate Complaints Data Cleaning & Scraping",
             "date":"July 2024",
             "publication":"The Data Liberation Project",
-            "link":"https://github.com/declanrjb/dlp-inmate-complaints",
-            "type":"Lede Program @ CU"
+            "link":"https://github.com/data-liberation-project/bop-inmate-complaint-data-processing",
+            "type":"Coding"
         },
         {
             "image":"portfolio/images/final_rhetoric_draft.png",
