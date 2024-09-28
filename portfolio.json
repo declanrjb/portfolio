@@ -60,6 +60,14 @@
             "type":"Lede Program @ CU"
         },
         {
+            "image":"portfolio/images/chronicle_chart-art.webp",
+            "title":"At U. of Wisconsin, Underrepresented Students of Color Were Half as Likely to Be Accepted This Year",
+            "date":"September 2024",
+            "publication":"The Chronicle of Higher Education",
+            "link":"https://www.chronicle.com/article/at-u-of-wisconsin-underrepresented-students-of-color-were-half-as-likely-to-be-accepted-this-year",
+            "type":"Data-Driven"
+        },
+        {
             "image":"portfolio/images/pidm_json_final.png",
             "title":"Flaw in Campus Directory Exposes ID Numbers of Students, Staff, Faculty, Alumni",
             "date":"September 2023",
